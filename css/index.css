@@ -9,6 +9,8 @@ body {
 :root {
   --brand-red: #c62828; /* Color de hover del menu desplegable */
   --body-bg: #fff5f5; /* fondo principal del body, sutil tintado para armonizar con --brand-red */
+  --azul: rgba(3, 28, 136, 0.85); /* color de fondo del carrusel de imagenes */
+  --negro: rgba(0, 0, 0, 0.85); /* color de fondo del contenedor de imagenes */
 }
 
 /* tamaño del logo */
@@ -260,9 +262,85 @@ body {
           final de estilo para el carrusel de marcas
 ----------------------------------------------------------------*/
 
+/* ---------------------------------------------
+      Estilos del contenedor de quienes somos
+  ----------------------------------------------*/
+
+#quienes-somos {
+  background: var(--azul);
+  color: #ffffff;
+  padding: 50px 0;
+}
+
+.item-VM {
+  background-color: #f9f9f9;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  padding: 3rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  min-height: 250px;
+  border-bottom-left-radius: 500px;
+  border-bottom-right-radius: 500px;
+  border-top-left-radius: 500px;
+  border-top-right-radius: 500px;
+}
+
+.item-VM:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.25);
+}
+
+.item-VM h2 {
+  color: #002d72; /* azul elegante */
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.item-VM p {
+  color: #555;
+  font-size: 1rem;
+}
+/* -------------------------------------------------------------
+                final de estilo del contenedor de quienes somos
+----------------------------------------------------------------*/
+
+/* ---------------------------------------------
+      Estilos del contenedor de testimonios
+  ----------------------------------------------*/
+  
+#carouselTestimonios blockquote {
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  font-style: italic;
+  transition: transform 0.4s ease;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+
+#carouselTestimonios .carousel-item blockquote p {
+  color: #444;
+  font-size: 1.1rem;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(1);
+}
+
+/* ---------------------------------------------
+      final de estilo del contenedor de testimonios
+  ----------------------------------------------*/
+
 
 /* ----- Tablets (pantallas medianas) ----- */
 @media (max-width: 992px) {
+
+  /* ---------------------------------------------
+      Estilos para tablets del carrusel de marcas
+  ----------------------------------------------*/
   .brands-section {
     overflow: hidden;
     background: #ffffff;
@@ -281,6 +359,10 @@ body {
 
 /* ----- Móviles (pantallas pequeñas) ----- */
 @media (max-width: 500px) {
+
+  /* ---------------------------------------------
+      Estilos para móviles del carrusel de marcas
+  ----------------------------------------------*/
   .brands-section {
     overflow: hidden;
     background: #ffffff;
