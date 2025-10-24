@@ -1,0 +1,299 @@
+/* estilos generales*/
+body {
+  font-family: 'sans-serif', sans-serif;
+  background-color: var(--body-bg);
+  margin: 0;
+  padding: 0;
+}
+/* variables de color de marca */
+:root {
+  --brand-red: #c62828; /* Color de hover del menu desplegable */
+  --body-bg: #fff5f5; /* fondo principal del body, sutil tintado para armonizar con --brand-red */
+}
+
+/* tamaño del logo */
+#logo {
+  width: 250px;
+  height: auto;
+}
+
+/* separador solo entre items de primer nivel (no dentro de dropdown-menu) */
+.navbar > li + li,
+.navbar > ul > li + li,
+.navbar .navbar-nav > li + li,
+.navbar .nav > li + li {
+  border-left: 2px solid rgb(3, 0, 0);
+  padding-left: 10px;
+  margin-left: 10px;
+  height: auto;
+  display: flex;
+  align-items: center;
+}
+
+/* Asegura que los elementos dentro de cualquier .dropdown-menu no se vean afectados */
+.navbar .dropdown-menu li,
+.navbar .dropdown-menu .dropdown-item {
+  border-left: none !important;
+  padding-left: 0 !important;
+  margin-left: 0 !important;
+}
+
+/* mantener el elemento seleccionado en color de marca */
+.navbar .nav-link.active,
+.navbar .nav-item.active > .nav-link,
+.navbar li.active > a {
+  color: var(--brand-red) !important;
+  font-weight: 600;
+  border-bottom: 3px solid var(--brand-red);
+  padding-bottom: calc(0.5rem - 3px); /* ajusta el espacio para la línea */
+}
+
+/* conservar el estilo cuando el elemento activo se hoveree */
+.navbar .nav-link.active:hover,
+.navbar .nav-item.active > .nav-link:hover,
+.navbar li.active > a:hover {
+  color: var(--brand-red) !important;
+  background-color: transparent;
+}
+
+.navbar {
+  font-weight: 450;
+  padding: 10px 0;
+  font-size: 1.25rem; /* 18px */
+  line-height: 1.1;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar:hover {
+  background-color: var(--brand-red);
+}
+
+/* ensure links inherit and have comfortable hit area */
+.navbar a {
+  color: black;
+  text-decoration: none;
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  transition: color 200ms ease, background-color 200ms ease;
+}
+
+#whatsapp-button {
+  font-size: 1.05rem;
+  padding: 10px;
+}
+
+.navbar a:hover {
+  background-color: rgba(255, 255, 255, 0.08);
+  color: var(--brand-red);
+}
+
+/* -------------------------------------------------------------
+                Estilo para el carrusel de imagenes
+----------------------------------------------------------------*/
+
+#carousel-imagenes {
+  background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(3, 28, 136, 0.85));
+}
+
+#singer_4423,
+#singer_4432,
+#fileteadora_singer {
+  position: relative;
+  border: none; /* elimina el borde completo */
+  border-radius: 50px;
+  box-sizing: border-box;
+  padding: 25px;
+}
+
+/* acento de borde sólo en la esquina inferior derecha */
+#singer_4423::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 50%; /* ajustar longitud del trazo */
+  height: 80%; /* ajustar longitud del trazo */
+  border-right: 3px solid #fff;
+  border-bottom: 3px solid #fff;
+  border-bottom-right-radius: 50px; /* igualar al radio del contenedor */
+  pointer-events: none;
+}
+
+#singer_4432::before,
+#singer_4432::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 50%; /* ajustar longitud del trazo */
+  height: 80%; /* ajustar longitud del trazo */
+  box-sizing: border-box;
+  pointer-events: none;
+}
+
+/* esquina superior izquierda */
+#singer_4432::before {
+  left: 0;
+  border-left: 3px solid #fff;
+  border-top: 3px solid #fff;
+  border-top-left-radius: 50px;
+}
+
+/* esquina superior derecha */
+#singer_4432::after {
+  right: 0;
+  border-right: 3px solid #fff;
+  border-top: 3px solid #fff;
+  border-top-right-radius: 50px;
+}
+
+#fileteadora_singer::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 50%; /* ajustar longitud del trazo horizontal */
+  height: 80%; /* ajustar longitud del trazo vertical */
+  border-left: 3px solid #fff;
+  border-bottom: 3px solid #fff;
+  border-bottom-left-radius: 50px; /* igualar al radio del contenedor */
+  pointer-events: none;
+}
+/* Hacer que la imagen de la singer_4423 sea mas grande al pasar el cursor*/
+#singer_4423 img {
+  transition: transform 200ms ease, background-color 200ms ease,
+    border-radius 200ms ease;
+  transform-origin: center center;
+  will-change: transform;
+}
+#singer_4423 img:hover {
+  border-radius: 10px;
+  transform: scale(1.06);
+}
+
+/* Hacer que la imagen de la singer_4432 sea mas grande al pasar el cursor*/
+#singer_4432 img {
+  transition: transform 200ms ease, background-color 200ms ease,
+    border-radius 200ms ease;
+  transform-origin: center center;
+  will-change: transform;
+}
+#singer_4432 img:hover {
+  border-radius: 10px;
+  transform: scale(1.06);
+}
+
+/* Hacer que la imagen de la fileteadora sea mas grande al pasar el cursor*/
+#fileteadora_singer img {
+  transition: transform 200ms ease, background-color 200ms ease,
+    border-radius 200ms ease;
+  transform-origin: center center;
+  will-change: transform;
+}
+#fileteadora_singer img:hover {
+  border-radius: 10px;
+  transform: scale(1.06);
+}
+/* -------------------------------------------------------------
+                Final de estilos para el carrusel de imagenes
+----------------------------------------------------------------*/
+
+
+/* -------------------------------------------------------------
+                Estilo para el carrusel de marcas 
+----------------------------------------------------------------*/
+
+.brands-section {
+  overflow: hidden;
+  background: #ffffff;
+  margin: 50px 70px 50px 70px;
+}
+
+.brands-track {
+  width: max-content; /* porque duplicamos los logos */
+  animation: scroll 20s linear infinite;
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
+  gap: 10px;
+  align-items: center;
+}
+
+.brands-track img {
+  margin: 0 35px;
+  opacity: 0.9;
+  transition: opacity 0.3s;
+}
+
+.brand-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 35px;
+}
+
+.brand-item img {
+  max-height: 70px;
+  max-width: 100%;
+  object-fit: contain;
+  display: block;
+  filter: saturate(1);
+  opacity: 0.9;
+  transition: opacity 0.3s;
+}
+
+.brands-track img:hover {
+  opacity: 1;
+  filter: saturate(2);
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX();
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+/* -------------------------------------------------------------
+          final de estilo para el carrusel de marcas
+----------------------------------------------------------------*/
+
+
+/* ----- Tablets (pantallas medianas) ----- */
+@media (max-width: 992px) {
+  .brands-section {
+    overflow: hidden;
+    background: #ffffff;
+    margin: 50px 20px 50px 20px;
+  }
+
+  .brand-item {
+    flex: 0 0 calc(100% / 4); /* 3 logos por fila */
+  }
+
+  .brand-item img {
+    max-height: 60px;
+    height: 50px;
+  }
+}
+
+/* ----- Móviles (pantallas pequeñas) ----- */
+@media (max-width: 500px) {
+  .brands-section {
+    overflow: hidden;
+    background: #ffffff;
+    margin: 50px 10px 50px 10px;
+  }
+
+  .brand-item {
+    flex: 0 0 calc(100% / 2); /* 2 logos por fila */
+    border-radius: 25px;
+  }
+
+  .brand-item img {
+    max-height: 50px;
+    height: 45px;
+  }
+}
