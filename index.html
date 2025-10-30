@@ -16,14 +16,24 @@
 <body>
   <!-- Navbar  barra de navegacion -->
   <header>
-    <div class="container-fluid">
+    <div class="container">
       <div class="row">
         <div class="col-4 justify-content-center d-flex">
           <img src="images/Logo transparente 200x500.png" alt="">
         </div>
         <div class="col-4 justify-content-between d-flex align-items-center gap-3 ">
-          <span><i></i>3206524049</span>
-          <span><i></i>Calle 17 # 16-41 </span>
+          <span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"
+              class="icon icon-tabler icons-tabler-filled icon-tabler-brand-whatsapp">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path
+                d="M18.497 4.409a10 10 0 0 1 -10.36 16.828l-.223 -.098l-4.759 .849l-.11 .011a1 1 0 0 1 -.11 0l-.102 -.013l-.108 -.024l-.105 -.037l-.099 -.047l-.093 -.058l-.014 -.011l-.012 -.007l-.086 -.073l-.077 -.08l-.067 -.088l-.056 -.094l-.034 -.07l-.04 -.108l-.028 -.128l-.012 -.102a1 1 0 0 1 0 -.125l.012 -.1l.024 -.11l.045 -.122l1.433 -3.304l-.009 -.014a10 10 0 0 1 1.549 -12.454l.215 -.203a10 10 0 0 1 13.226 -.217m-8.997 3.09a1.5 1.5 0 0 0 -1.5 1.5v1a6 6 0 0 0 6 6h1a1.5 1.5 0 0 0 0 -3h-1l-.144 .007a1.5 1.5 0 0 0 -1.128 .697l-.042 .074l-.022 -.007a4.01 4.01 0 0 1 -2.435 -2.435l-.008 -.023l.075 -.041a1.5 1.5 0 0 0 .704 -1.272v-1a1.5 1.5 0 0 0 -1.5 -1.5" />
+            </svg> 3206524049</span>
+          <span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"
+              class="icon icon-tabler icons-tabler-filled icon-tabler-map-pin">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path
+                d="M18.364 4.636a9 9 0 0 1 .203 12.519l-.203 .21l-4.243 4.242a3 3 0 0 1 -4.097 .135l-.144 -.135l-4.244 -4.243a9 9 0 0 1 12.728 -12.728zm-6.364 3.364a3 3 0 1 0 0 6a3 3 0 0 0 0 -6z" />
+            </svg> Calle 17 # 16-41 </span>
         </div>
         <div class="col-4 justify-content-center d-flex align-items-center gap-3">
           <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
@@ -46,7 +56,7 @@
   </header>
 
   <!-- 🔽 El navbar separado para aplicar sticky correctamente -->
-  <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar sticky-top navbar-expand-lg bg-white">
     <div class="container">
       <!-- Logo o nombre (opcional) -->
       <a class="navbar-brand fw-bold" href="#">Maquinas & Maquinas</a>
@@ -59,8 +69,8 @@
       </button>
 
       <!-- Menú -->
-      <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
-        <ul class="navbar-nav">
+      <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+        <ul class="navbar-nav justify-content-center">
           <li class="nav-item"><a class="nav-link" href="#">Inicio</a></li>
           <li class="nav-item"><a class="nav-link" href="#">Máquinas</a></li>
           <li class="nav-item"><a class="nav-link" href="#">Repuestos</a></li>
@@ -73,151 +83,15 @@
     </div>
   </nav>
 
-
-  <!-- <header>
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-4 justify-content-center d-flex">
-          <img src="images/Logo transparente 200x500.png" alt="">
-        </div>
-        <div class="col-4 justify-content-between d-flex align-items-center gap-3 ">
-          <span><i></i>3206524049</span>
-          <span><i></i>Calle 17 # 16-41 </span>
-        </div>
-        <div class="col-4 justify-content-center d-flex align-items-center gap-3">
-          <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
-            <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 24 24" fill="currentColor"
-              class="text-primary">
-              <path
-                d="M22 12.07C22 6.48 17.52 2 11.93 2S2 6.48 2 12.07c0 4.99 3.66 9.13 8.44 9.92v-7.02H8.12v-2.9h2.32V9.84c0-2.3 1.37-3.57 3.46-3.57.99 0 2.03.18 2.03.18v2.23h-1.14c-1.13 0-1.48.7-1.48 1.41v1.7h2.52l-.4 2.9h-2.12v7.02C18.34 21.2 22 17.06 22 12.07z" />
-            </svg>
-          </a>
-          <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-            <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 24 24" fill="currentColor"
-              class="text-danger">
-              <path
-                d="M7 2C4.24 2 2 4.24 2 7v10c0 2.76 2.24 5 5 5h10c2.76 0 5-2.24 5-5V7c0-2.76-2.24-5-5-5H7zm10 2c1.66 0 3 1.34 3 3v10c0 1.66-1.34 3-3 3H7c-1.66 0-3-1.34-3-3V7c0-1.66 1.34-3 3-3h10zM12 7.5A4.5 4.5 0 1 0 12 16.5 4.5 4.5 0 1 0 12 7.5zm0 2A2.5 2.5 0 1 1 12 14a2.5 2.5 0 0 1 0-4.5zM17.7 6.3a1.05 1.05 0 1 1-2.1 0 1.05 1.05 0 0 1 2.1 0z" />
-            </svg>
-          </a>
-        </div>
-      </div>
-      <div class="row justify-content-center">
-        <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light float-right">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-            aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">Inicio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">Maquinas</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">Repuestos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">Contacto</a>
-              </li>
-            </ul>
-            <button id="whatsapp-button" class="btn btn-success text-white" href="">
-              <i class="fa fa-whatsapp" aria-hidden="true"></i> Contáctanos ahora
-            </button>
-          </div>
-        </nav>
-      </div>
-    </div>
-  </header> -->
-
-  <!-- <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light  ">
-      <div class="container-fluid ">
-        <div class="col-lg-4 justify-content-center d-flex">
-          <img id="logo" src="images/Logo transparente 200x500.png" alt="Logo" />
-        </div>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="col-lg-4">
-          <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-6 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">Inicio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">Maquinas</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">Repuestos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">Contacto</a>
-              </li>
-            </ul>
-            <button id="whatsapp-button" class="btn btn-success text-white" href="">
-              <i class="fa fa-whatsapp" aria-hidden="true"></i> Contáctanos ahora
-            </button>
-          </div>
-        </div>
-        <div class="col-lg-4 justify-content-center d-flex align-items-center gap-3">
-          <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
-            <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 24 24" fill="currentColor"
-              class="text-primary">
-              <path
-                d="M22 12.07C22 6.48 17.52 2 11.93 2S2 6.48 2 12.07c0 4.99 3.66 9.13 8.44 9.92v-7.02H8.12v-2.9h2.32V9.84c0-2.3 1.37-3.57 3.46-3.57.99 0 2.03.18 2.03.18v2.23h-1.14c-1.13 0-1.48.7-1.48 1.41v1.7h2.52l-.4 2.9h-2.12v7.02C18.34 21.2 22 17.06 22 12.07z" />
-            </svg>
-          </a>
-          <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-            <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 24 24" fill="currentColor"
-              class="text-danger">
-              <path
-                d="M7 2C4.24 2 2 4.24 2 7v10c0 2.76 2.24 5 5 5h10c2.76 0 5-2.24 5-5V7c0-2.76-2.24-5-5-5H7zm10 2c1.66 0 3 1.34 3 3v10c0 1.66-1.34 3-3 3H7c-1.66 0-3-1.34-3-3V7c0-1.66 1.34-3 3-3h10zM12 7.5A4.5 4.5 0 1 0 12 16.5 4.5 4.5 0 1 0 12 7.5zm0 2A2.5 2.5 0 1 1 12 14a2.5 2.5 0 0 1 0-4.5zM17.7 6.3a1.05 1.05 0 1 1-2.1 0 1.05 1.05 0 0 1 2.1 0z" />
-            </svg>
-          </a>
-        </div>
-
-      </div>
-    </nav>
-  </header> -->
-
   <main>
     <!-- Carousel de imagenes de maquinas de coser -->
-    <section id="carousel-imagenes" class="py-5 ">
+    <section id="carousel-imagenes" class="">
       <div id="carouselExample" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000"
         data-bs-pause="true">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <div class="container-fluid">
-              <div class="row mb-4 text-center">
-                <h1 class="text-white">SINGER</h1>
-              </div>
-              <div id="contenido_singer" class="row">
-                <div id="singer_4423" class="col-4  text-center ">
-                  <h1 class="text-white">Singer 4423</h1>
-                  <img src="images/Singer_4423.png" class="justify-content-center" height="300" alt="...">
-                </div>
-                <div id="singer_4432" class="col-4 text-center">
-                  <h1 class="text-white">Singer 4432</h1>
-                  <img src="images/Singer_4432.png" class="justify-content-center " height="300" alt="...">
-                </div>
-                <div id="fileteadora_singer" class="col-4 text-center">
-                  <h1 class="text-white">Fileteadora Singer Heavy Duty</h1>
-                  <img src="images/fileteadora singer heavy duty.png" class="justify-content-center" height="300"
-                    alt="...">
-                </div>
-              </div>
-            </div>
+            <img  src="images/singer_portada_375.png" class="d-block w-100" alt="...">
           </div>
-          <!-- <div class="carousel-item">
-            <img src="images/imagen_1.png" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="images/imagen_1.png" class="d-block w-100" alt="...">
-          </div> -->
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -229,6 +103,7 @@
         </button>
       </div>
     </section>
+
 
     <!-- Sección de marcas con desplazamiento horizontal -->
 

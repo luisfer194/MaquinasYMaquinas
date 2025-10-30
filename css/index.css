@@ -1,6 +1,13 @@
 /* estilos generales*/
 body {
- 
+  font-family: 'sans-serif', sans-serif;
+  background-color: var(--body-bg);
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.6;
 }
 /* variables de color de marca */
 :root {
@@ -10,158 +17,19 @@ body {
   --negro: rgba(0, 0, 0, 0.85); /* color de fondo del contenedor de imagenes */
 }
 
-header .row {
-  overflow: visible !important;
-}
-
 /* tamaño del logo */
 header img {
-  width: 200px;
+  width: 11.5rem;
   height: auto;
 }
-
-
-/* separador solo entre items de primer nivel (no dentro de dropdown-menu) */
-
-
-/* Asegura que los elementos dentro de cualquier .dropdown-menu no se vean afectados */
-
-
-/* mantener el elemento seleccionado en color de marca */
-
-
-/* conservar el estilo cuando el elemento activo se hoveree */
-
-
-
-
-
-
 
 /* -------------------------------------------------------------
                 Estilo para el carrusel de imagenes
 ----------------------------------------------------------------*/
 
-#carousel-imagenes {
-  background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(3, 28, 136, 0.85));
+main section:nth-child(1) img{
 }
 
-#singer_4423,
-#singer_4432,
-#fileteadora_singer {
-  position: relative;
-  border: none; /* elimina el borde completo */
-  border-radius: 50px;
-  box-sizing: border-box;
-  padding: 25px;
-}
-
-/* acento de borde sólo en la esquina inferior derecha */
-#singer_4423::after {
-  content: '';
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  width: 50%; /* ajustar longitud del trazo */
-  height: 80%; /* ajustar longitud del trazo */
-  border-right: 3px solid #fff;
-  border-bottom: 3px solid #fff;
-  border-bottom-right-radius: 50px; /* igualar al radio del contenedor */
-  pointer-events: none;
-}
-
-#singer_4432::before,
-#singer_4432::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  width: 50%; /* ajustar longitud del trazo */
-  height: 80%; /* ajustar longitud del trazo */
-  box-sizing: border-box;
-  pointer-events: none;
-}
-
-/* esquina superior izquierda */
-#singer_4432::before {
-  left: 0;
-  border-left: 3px solid #fff;
-  border-top: 3px solid #fff;
-  border-top-left-radius: 50px;
-}
-
-/* esquina superior derecha */
-#singer_4432::after {
-  right: 0;
-  border-right: 3px solid #fff;
-  border-top: 3px solid #fff;
-  border-top-right-radius: 50px;
-}
-
-#fileteadora_singer::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 50%; /* ajustar longitud del trazo horizontal */
-  height: 80%; /* ajustar longitud del trazo vertical */
-  border-left: 3px solid #fff;
-  border-bottom: 3px solid #fff;
-  border-bottom-left-radius: 50px; /* igualar al radio del contenedor */
-  pointer-events: none;
-}
-/* Hacer que la imagen de la singer_4423 sea mas grande al pasar el cursor*/
-#singer_4423 img {
-  transition: transform 200ms ease, background-color 200ms ease,
-    border-radius 200ms ease;
-  transform-origin: center center;
-  will-change: transform;
-}
-#singer_4423 img:hover {
-  border-radius: 10px;
-  transform: scale(1.06);
-}
-
-/* Hacer que la imagen de la singer_4432 sea mas grande al pasar el cursor*/
-#singer_4432 img {
-  transition: transform 200ms ease, background-color 200ms ease,
-    border-radius 200ms ease;
-  transform-origin: center center;
-  will-change: transform;
-}
-#singer_4432 img:hover {
-  border-radius: 10px;
-  transform: scale(1.06);
-}
-
-/* Hacer que la imagen de la fileteadora sea mas grande al pasar el cursor*/
-#fileteadora_singer img {
-  transition: transform 200ms ease, background-color 200ms ease,
-    border-radius 200ms ease;
-  transform-origin: center center;
-  will-change: transform;
-}
-#fileteadora_singer img:hover {
-  border-radius: 10px;
-  transform: scale(1.06);
-}
-
-#contenido_singer{
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-
-}
-
-@media (width >= 640px) {
-  #singer_4423,
-  #singer_4432,
-  #fileteadora_singer {
-    position: relative;
-    border: none; /* elimina el borde completo */
-    border-radius: 50px;
-    box-sizing: border-box;
-    padding: 25px;
-  }
-}
 /* -------------------------------------------------------------
                 Final de estilos para el carrusel de imagenes
 ----------------------------------------------------------------*/
