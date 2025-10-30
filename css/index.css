@@ -1,9 +1,6 @@
 /* estilos generales*/
 body {
-  font-family: 'sans-serif', sans-serif;
-  background-color: var(--body-bg);
-  margin: 0;
-  padding: 0;
+ 
 }
 /* variables de color de marca */
 :root {
@@ -13,81 +10,33 @@ body {
   --negro: rgba(0, 0, 0, 0.85); /* color de fondo del contenedor de imagenes */
 }
 
+header .row {
+  overflow: visible !important;
+}
+
 /* tamaño del logo */
-#logo {
-  width: 250px;
+header img {
+  width: 200px;
   height: auto;
 }
+
 
 /* separador solo entre items de primer nivel (no dentro de dropdown-menu) */
-.navbar > li + li,
-.navbar > ul > li + li,
-.navbar .navbar-nav > li + li,
-.navbar .nav > li + li {
-  border-left: 2px solid rgb(3, 0, 0);
-  padding-left: 10px;
-  margin-left: 10px;
-  height: auto;
-  display: flex;
-  align-items: center;
-}
+
 
 /* Asegura que los elementos dentro de cualquier .dropdown-menu no se vean afectados */
-.navbar .dropdown-menu li,
-.navbar .dropdown-menu .dropdown-item {
-  border-left: none !important;
-  padding-left: 0 !important;
-  margin-left: 0 !important;
-}
+
 
 /* mantener el elemento seleccionado en color de marca */
-.navbar .nav-link.active,
-.navbar .nav-item.active > .nav-link,
-.navbar li.active > a {
-  color: var(--brand-red) !important;
-  font-weight: 600;
-  border-bottom: 3px solid var(--brand-red);
-  padding-bottom: calc(0.5rem - 3px); /* ajusta el espacio para la línea */
-}
+
 
 /* conservar el estilo cuando el elemento activo se hoveree */
-.navbar .nav-link.active:hover,
-.navbar .nav-item.active > .nav-link:hover,
-.navbar li.active > a:hover {
-  color: var(--brand-red) !important;
-  background-color: transparent;
-}
 
-.navbar {
-  font-weight: 450;
-  padding: 10px 0;
-  font-size: 1.25rem; /* 18px */
-  line-height: 1.1;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
 
-.navbar:hover {
-  background-color: var(--brand-red);
-}
 
-/* ensure links inherit and have comfortable hit area */
-.navbar a {
-  color: black;
-  text-decoration: none;
-  display: inline-block;
-  padding: 0.5rem 1rem;
-  transition: color 200ms ease, background-color 200ms ease;
-}
 
-#whatsapp-button {
-  font-size: 1.05rem;
-  padding: 10px;
-}
 
-.navbar a:hover {
-  background-color: rgba(255, 255, 255, 0.08);
-  color: var(--brand-red);
-}
+
 
 /* -------------------------------------------------------------
                 Estilo para el carrusel de imagenes
@@ -195,10 +144,27 @@ body {
   border-radius: 10px;
   transform: scale(1.06);
 }
+
+#contenido_singer{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+
+}
+
+@media (width >= 640px) {
+  #singer_4423,
+  #singer_4432,
+  #fileteadora_singer {
+    position: relative;
+    border: none; /* elimina el borde completo */
+    border-radius: 50px;
+    box-sizing: border-box;
+    padding: 25px;
+  }
+}
 /* -------------------------------------------------------------
                 Final de estilos para el carrusel de imagenes
 ----------------------------------------------------------------*/
-
 
 /* -------------------------------------------------------------
                 Estilo para el carrusel de marcas 
@@ -305,9 +271,27 @@ body {
 ----------------------------------------------------------------*/
 
 /* ---------------------------------------------
+      Estilos del contenedor de elegirnos
+  ----------------------------------------------*/
+#cont-img-elegirnos {
+  background: var(--negro);
+}
+
+#img-elegirnos img {
+  border-radius: 25px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 50%;
+}
+
+/* ---------------------------------------------
+      Estilos del contenedor de elegirnos
+  ----------------------------------------------*/
+
+/* ---------------------------------------------
       Estilos del contenedor de testimonios
   ----------------------------------------------*/
-  
+
 #carouselTestimonios blockquote {
   background: #fff;
   border-radius: 15px;
@@ -318,7 +302,6 @@ body {
   max-width: 600px;
   margin: 0 auto;
 }
-
 
 #carouselTestimonios .carousel-item blockquote p {
   color: #444;
@@ -334,10 +317,8 @@ body {
       final de estilo del contenedor de testimonios
   ----------------------------------------------*/
 
-
 /* ----- Tablets (pantallas medianas) ----- */
 @media (max-width: 992px) {
-
   /* ---------------------------------------------
       Estilos para tablets del carrusel de marcas
   ----------------------------------------------*/
@@ -359,7 +340,6 @@ body {
 
 /* ----- Móviles (pantallas pequeñas) ----- */
 @media (max-width: 500px) {
-
   /* ---------------------------------------------
       Estilos para móviles del carrusel de marcas
   ----------------------------------------------*/
