@@ -15,20 +15,67 @@ body {
   --body-bg: #fff5f5; /* fondo principal del body, sutil tintado para armonizar con --brand-red */
   --azul: rgba(3, 28, 136, 0.85); /* color de fondo del carrusel de imagenes */
   --negro: rgba(0, 0, 0, 0.85); /* color de fondo del contenedor de imagenes */
+  --rojo: rgb(255, 0, 0);
+  --background: #101922;
 }
 
-/* tamaño del logo */
+/* -------------------------------------------------------------
+                Estilo para el header
+----------------------------------------------------------------*/
 header img {
   width: 11.5rem;
   height: auto;
 }
 
+header span {
+  font-size: 1.125rem;
+  font-weight: 600;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    color: var(--rojo);
+  }
+}
+
+/* -------------------------------------------------------------
+                Estilo para el nav
+----------------------------------------------------------------*/
+
+nav {
+  align-items: center;
+  gap: 112rem;
+  display: flex;
+
+  a {
+    font-size: 1.125rem;
+  }
+}
+
+.nav-item {
+  border-right: 1px solid black;
+  padding: 0px 25px 0px 25px;
+
+  a {
+    font-size: 1.125rem;
+    font-weight: 500;
+    color: black;
+
+    &:hover {
+      color: var(--rojo);
+    }
+  }
+}
+
+@media (width <= 950px) {
+  .nav-item {
+    border: none;
+  }
+}
+
 /* -------------------------------------------------------------
                 Estilo para el carrusel de imagenes
 ----------------------------------------------------------------*/
-
-main section:nth-child(1) img{
-}
 
 /* -------------------------------------------------------------
                 Final de estilos para el carrusel de imagenes
@@ -101,39 +148,38 @@ main section:nth-child(1) img{
   ----------------------------------------------*/
 
 #quienes-somos {
-  background: var(--azul);
-  color: #ffffff;
-  padding: 50px 0;
+  display: flex;
+  padding-top: 50px;
+  padding-bottom: 65px;
+  background-color: rgb(65, 0, 0);
+  background-image: linear-gradient(
+    to bottom,
+    rgb(155, 0, 0),
+    rgba(255, 0, 0, 0)
+  );
+  opacity: 0.9;
+  color: #fff;
+  align-items: center;
+
+  img {
+    width: 35%;
+    border-radius: 50px !important;
+  }
+}
+/* Ajustando el contenido de Mision y Vision*/
+.cont-vision-mision {
+  padding: 25px;
+
+  img{
+    display: flex;
+    margin: auto;
+    background-color: #fff;
+    padding: 5px;
+    width: 150px !important;
+    border-radius: 100px !important;
+  }
 }
 
-.item-vm {
-  background-color: #f9f9f9;
-  border-radius: 15px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
-  padding: 3rem;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  min-height: 250px;
-  border-bottom-left-radius: 500px;
-  border-bottom-right-radius: 500px;
-  border-top-left-radius: 500px;
-  border-top-right-radius: 500px;
-}
-
-.item-vm:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.25);
-}
-
-.item-vm h2 {
-  color: #002d72; /* azul elegante */
-  font-weight: bold;
-  margin-bottom: 1rem;
-}
-
-.item-vm p {
-  color: #555;
-  font-size: 1rem;
-}
 /* -------------------------------------------------------------
                 final de estilo del contenedor de quienes somos
 ----------------------------------------------------------------*/
