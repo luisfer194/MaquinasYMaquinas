@@ -73,25 +73,24 @@ nav {
   }
 }
 
-@media (width <= 430px) {
+@media (width: 430px) {
   header img {
     width: 200px;
     margin-left: 70px;
   }
 
-  #cont_info{
+  #cont_info {
     margin-top: 5px;
     flex-direction: column;
     align-items: center;
   }
-
 
   header span {
     font-size: 0.95rem;
     font-weight: 600;
     align-items: center;
     justify-content: center;
-
+    text-decoration: none;
     &:hover {
       color: var(--rojo);
     }
@@ -100,6 +99,12 @@ nav {
   .nav-item {
     border: none;
   }
+
+  main section:nth-child(2) h2 {
+    font-size: 1.25rem;
+    margin-bottom: 1000px;
+  }
+
 }
 
 /* -------------------------------------------------------------
@@ -191,8 +196,17 @@ nav {
   align-items: center;
 
   img {
-    width: 35%;
+    width: 40%;
     border-radius: 50px !important;
+  }
+
+  @media (max-width: 430px) {
+    img {
+      width: 100% !important; /* o el tamaño que desees */
+      max-width: 400px;
+      margin: 0 auto;
+      display: block;
+    }
   }
 }
 /* Ajustando el contenido de Mision y Vision*/
