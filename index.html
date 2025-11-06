@@ -7,14 +7,19 @@
   <title>Maquinas & Maquinas</title>
   <link rel="icon" href="images/icono.svg">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
   <link rel="stylesheet" href="css/index.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="/js/index.js" defer></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" defer></script>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+
 </head>
 
 <body>
-
   <!-- Navbar  barra de navegacion -->
   <header>
     <div class="container">
@@ -33,109 +38,58 @@
             <!-- Columna de Información de Contacto (Ocupa col-md-8 en pantallas medianas/grandes) -->
             <div class="col-12 col-md-8 d-flex justify-content-center align-items-center">
               <!-- Usamos d-flex flex-column para apilar los elementos verticalmente -->
-              <div id="cont_info" class="d-flex gap-2 justify-content-center">
+              <div id="cont_info" class="d-flex justify-content-center">
 
                 <!-- Info WhatsApp -->
-                <span>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="green"
-                    class="icon icon-tabler icons-tabler-filled icon-tabler-brand-whatsapp">
+                <a href="https://wa.me/573206524049" class="contact-info-header text-decoration-none">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="green">
                     <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                     <path
                       d="M18.497 4.409a10 10 0 0 1 -10.36 16.828l-.223 -.098l-4.759 .849l-.11 .011a1 1 0 0 1 -.11 0l-.102 -.013l-.108 -.024l-.105 -.037l-.099 -.047l-.093 -.058l-.014 -.011l-.012 -.007l-.086 -.073l-.077 -.08l-.067 -.088l-.056 -.094l-.034 -.07l-.04 -.108l-.028 -.128l-.012 -.102a1 1 0 0 1 0 -.125l.012 -.1l.024 -.11l.045 -.122l1.433 -3.304l-.009 -.014a10 10 0 0 1 1.549 -12.454l.215 -.203a10 10 0 0 1 13.226 -.217m-8.997 3.09a1.5 1.5 0 0 0 -1.5 1.5v1a6 6 0 0 0 6 6h1a1.5 1.5 0 0 0 0 -3h-1l-.144 .007a1.5 1.5 0 0 0 -1.128 .697l-.042 .074l-.022 -.007a4.01 4.01 0 0 1 -2.435 -2.435l-.008 -.023l.075 -.041a1.5 1.5 0 0 0 .704 -1.272v-1a1.5 1.5 0 0 0 -1.5 -1.5" />
                   </svg>
-                  3206524049
-                </span>
-
-                <!-- Info Ubicación -->
-                <span>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="red"
-                    class="icon icon-tabler icons-tabler-filled icon-tabler-map-pin">
+                  <span>3206524049</span>
+                </a>
+                <!-- Ubicación -->
+                <div class="contact-info-header">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="red">
                     <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                     <path
                       d="M18.364 4.636a9 9 0 0 1 .203 12.519l-.203 .21l-4.243 4.242a3 3 0 0 1 -4.097 .135l-.144 -.135l-4.244 -4.243a9 9 0 0 1 12.728 -12.728zm-6.364 3.364a3 3 0 1 0 0 6a3 3 0 0 0 0 -6z" />
                   </svg>
-                  Calle 17 # 16-41
-                </span>
+                  <span>Calle 17 # 16-41</span>
+                </div>
               </div>
             </div>
 
             <!-- Columna de Redes Sociales (Ocupa col-md-4 restante) -->
-            <div class="col-12 col-md-4 justify-content-center d-flex align-items-center gap-3 mt-md-0">
-              <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
-                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="45" viewBox="0 0 24 24" fill="currentColor"
-                  class="text-primary">
-                  <path
-                    d="M22 12.07C22 6.48 17.52 2 11.93 2S2 6.48 2 12.07c0 4.99 3.66 9.13 8.44 9.92v-7.02H8.12v-2.9h2.32V9.84c0-2.3 1.37-3.57 3.46-3.57.99 0 2.03.18 2.03.18v2.23h-1.14c-1.13 0-1.48.7-1.48 1.41v1.7h2.52l-.4 2.9h-2.12v7.02C18.34 21.2 22 17.06 22 12.07z" />
-                </svg>
-              </a>
-              <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="45" viewBox="0 0 24 24" fill="currentColor"
-                  class="text-danger">
-                  <path
-                    d="M7 2C4.24 2 2 4.24 2 7v10c0 2.76 2.24 5 5 5h10c2.76 0 5-2.24 5-5V7c0-2.76-2.24-5-5-5H7zm10 2c1.66 0 3 1.34 3 3v10c0 1.66-1.34 3-3 3H7c-1.66 0-3-1.34-3-3V7c0-1.66 1.34-3 3-3h10zM12 7.5A4.5 4.5 0 1 0 12 16.5 4.5 4.5 0 1 0 12 7.5zm0 2A2.5 2.5 0 1 1 12 14a2.5 2.5 0 0 1 0-4.5zM17.7 6.3a1.05 1.05 0 1 1-2.1 0 1.05 1.05 0 0 1 2.1 0z" />
-                </svg>
-              </a>
+            <div class="col-12 col-md-4">
+              <div class="d-flex justify-content-center justify-content-md-end gap-3">
+                <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"
+                  class="social-header facebook" aria-label="Facebook">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"
+                    fill="currentColor">
+                    <path
+                      d="M22 12.07C22 6.48 17.52 2 11.93 2S2 6.48 2 12.07c0 4.99 3.66 9.13 8.44 9.92v-7.02H8.12v-2.9h2.32V9.84c0-2.3 1.37-3.57 3.46-3.57.99 0 2.03.18 2.03.18v2.23h-1.14c-1.13 0-1.48.7-1.48 1.41v1.7h2.52l-.4 2.9h-2.12v7.02C18.34 21.2 22 17.06 22 12.07z" />
+                  </svg>
+                </a>
+                <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"
+                  class="social-header instagram" aria-label="Instagram">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"
+                    fill="currentColor">
+                    <path
+                      d="M7 2C4.24 2 2 4.24 2 7v10c0 2.76 2.24 5 5 5h10c2.76 0 5-2.24 5-5V7c0-2.76-2.24-5-5-5H7zm10 2c1.66 0 3 1.34 3 3v10c0 1.66-1.34 3-3 3H7c-1.66 0-3-1.34-3-3V7c0-1.66 1.34-3 3-3h10zM12 7.5A4.5 4.5 0 1 0 12 16.5 4.5 4.5 0 1 0 12 7.5zm0 2A2.5 2.5 0 1 1 12 14a2.5 2.5 0 0 1 0-4.5zM17.7 6.3a1.05 1.05 0 1 1-2.1 0 1.05 1.05 0 0 1 2.1 0z" />
+                  </svg>
+                </a>
+              </div>
             </div>
-
           </div>
         </div>
       </div>
     </div>
   </header>
 
-
-
-  <!-- <header>
-    <div class="container">
-      <div class="row">
-        <div class="col-4 justify-content-center d-flex">
-          <img src="images/Logo transparente.png" alt="">
-        </div>
-        <div class="col-8 justify-content-around d-flex align-items-center gap-3 ">
-          <div class="row justify-content-around ">
-            <div class="col-12 col-md-8 justify-content-between">
-              <div class="row">
-                <div class="col-6 col-md-8">
-                  <span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="green"
-                      class="icon icon-tabler icons-tabler-filled icon-tabler-brand-whatsapp">
-                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                      <path
-                        d="M18.497 4.409a10 10 0 0 1 -10.36 16.828l-.223 -.098l-4.759 .849l-.11 .011a1 1 0 0 1 -.11 0l-.102 -.013l-.108 -.024l-.105 -.037l-.099 -.047l-.093 -.058l-.014 -.011l-.012 -.007l-.086 -.073l-.077 -.08l-.067 -.088l-.056 -.094l-.034 -.07l-.04 -.108l-.028 -.128l-.012 -.102a1 1 0 0 1 0 -.125l.012 -.1l.024 -.11l.045 -.122l1.433 -3.304l-.009 -.014a10 10 0 0 1 1.549 -12.454l.215 -.203a10 10 0 0 1 13.226 -.217m-8.997 3.09a1.5 1.5 0 0 0 -1.5 1.5v1a6 6 0 0 0 6 6h1a1.5 1.5 0 0 0 0 -3h-1l-.144 .007a1.5 1.5 0 0 0 -1.128 .697l-.042 .074l-.022 -.007a4.01 4.01 0 0 1 -2.435 -2.435l-.008 -.023l.075 -.041a1.5 1.5 0 0 0 .704 -1.272v-1a1.5 1.5 0 0 0 -1.5 -1.5" />
-                    </svg> 3206524049</span>
-                </div>
-                <div class="col-6 col-md-6">
-                  <span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="red"
-                      class="icon icon-tabler icons-tabler-filled icon-tabler-map-pin">
-                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                      <path
-                        d="M18.364 4.636a9 9 0 0 1 .203 12.519l-.203 .21l-4.243 4.242a3 3 0 0 1 -4.097 .135l-.144 -.135l-4.244 -4.243a9 9 0 0 1 12.728 -12.728zm-6.364 3.364a3 3 0 1 0 0 6a3 3 0 0 0 0 -6z" />
-                    </svg> Calle 17 # 16-41 </span>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-md-4 justify-content-center d-flex align-items-center gap-3">
-              <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
-                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="45" viewBox="0 0 24 24" fill="currentColor"
-                  class="text-primary">
-                  <path
-                    d="M22 12.07C22 6.48 17.52 2 11.93 2S2 6.48 2 12.07c0 4.99 3.66 9.13 8.44 9.92v-7.02H8.12v-2.9h2.32V9.84c0-2.3 1.37-3.57 3.46-3.57.99 0 2.03.18 2.03.18v2.23h-1.14c-1.13 0-1.48.7-1.48 1.41v1.7h2.52l-.4 2.9h-2.12v7.02C18.34 21.2 22 17.06 22 12.07z" />
-                </svg>
-              </a>
-              <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="45" viewBox="0 0 24 24" fill="currentColor"
-                  class="text-danger">
-                  <path
-                    d="M7 2C4.24 2 2 4.24 2 7v10c0 2.76 2.24 5 5 5h10c2.76 0 5-2.24 5-5V7c0-2.76-2.24-5-5-5H7zm10 2c1.66 0 3 1.34 3 3v10c0 1.66-1.34 3-3 3H7c-1.66 0-3-1.34-3-3V7c0-1.66 1.34-3 3-3h10zM12 7.5A4.5 4.5 0 1 0 12 16.5 4.5 4.5 0 1 0 12 7.5zm0 2A2.5 2.5 0 1 1 12 14a2.5 2.5 0 0 1 0-4.5zM17.7 6.3a1.05 1.05 0 1 1-2.1 0 1.05 1.05 0 0 1 2.1 0z" />
-                </svg>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </header> -->
-
   <!-- 🔽 El navbar separado para aplicar sticky correctamente -->
+
   <nav class="navbar sticky-top navbar-expand-lg bg-white">
     <div class="container">
       <!-- Logo o nombre (opcional) -->
@@ -165,7 +119,16 @@
 
   <main>
     <!-- Carousel de imagenes de maquinas de coser -->
-    <section id="carousel-imagenes" class="">
+    <section id="carousel-imagenes" class="d-none d-md-block py-lg-3 ">
+      <section id="bienvenida" class="text-center d-flex align-items-center ">
+        <div class="container">
+          <h3 class="fw-bold display-5">¡Bienvenido a <span class="text-danger">Máquinas & Máquinas</span>!</h3>
+          <p class="lead mt-3 text-black fw-normal">
+            Tu aliado en la confección. Ofrecemos máquinas de coser domésticas e industriales, repuestos,
+            mantenimiento y asesoría especializada para que tus proyectos funcionen con la mejor precisión.
+          </p>
+        </div>
+      </section>
       <div id="carouselExample" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000"
         data-bs-pause="true">
         <div class="carousel-inner">
@@ -184,87 +147,42 @@
       </div>
     </section>
 
-
-    <!-- Sección de marcas con desplazamiento horizontal -->
-    <section>
-      <section class="brands-section">
-        <h2 class="fw-bold mb-3 text-center">Trabajamos con las mejores marcas del mundo de la costura</h2>
-        <div class="brands-track">
-          <div class="brand-item"><img src="images/Logo_singer.png" alt="Marca 1"></div>
-          <div class="brand-item"><img src="images/Logo_juki.png" alt="Marca 2"></div>
-          <div class="brand-item"><img src="images/Logo_kingter.png" alt="Marca 3"></div>
-          <div class="brand-item"><img src="images/Logo_JINTHEX.png" alt="Marca 4"></div>
-          <div class="brand-item"><img src="images/Logo_KANSAI.png" alt="Marca 5"></div>
-          <div class="brand-item"><img src="images/Logo_JACK.png" alt="Marca 6"></div>
-          <div class="brand-item"><img src="images/Logo_YAMATA.png" alt="Marca 7"></div>
-          <div class="brand-item"><img src="images/Logo_JONTEX.png" alt="Marca 8"></div>
-          <!-- Duplicas para el loop -->
-          <div class="brand-item"><img src="images/Logo_singer.png" alt="Marca 1"></div>
-          <div class="brand-item"><img src="images/Logo_juki.png" alt="Marca 2"></div>
-          <div class="brand-item"><img src="images/Logo_kingter.png" alt="Marca 3"></div>
-          <div class="brand-item"><img src="images/Logo_JINTHEX.png" alt="Marca 4"></div>
-          <div class="brand-item"><img src="images/Logo_KANSAI.png" alt="Marca 5"></div>
-          <div class="brand-item"><img src="images/Logo_JACK.png" alt="Marca 6"></div>
-          <div class="brand-item"><img src="images/Logo_YAMATA.png" alt="Marca 7"></div>
-          <div class="brand-item"><img src="images/Logo_JONTEX.png" alt="Marca 8"></div>
-        </div>
-      </section>
-    </section>
-
-    <!-- 🧰 QUIÉNES SOMOS -->
-    <section id="quienes-somos" class="py-5 bg-dark text-white">
+    <section id="bienvenida" class="text-center d-flex align-items-center d-block d-md-none">
       <div class="container">
-
-        <!-- Imagen principal -->
-        <div class="row justify-content-center mb-4">
-          <div class="col-md-8 text-center">
-            <img src="images/quienes_somos.png" class="img-fluid rounded" alt="Quienes Somos">
-          </div>
-        </div>
-
-        <!-- Título y descripción -->
-        <div class="row mb-5">
-          <div class="col-12">
-            <h2 class="text-center fw-bold mb-3">
-              Más de una década impulsando la confección en Colombia
-            </h2>
-            <p class="lead text-justify">
-              Somos una empresa dedicada a la <strong>venta, distribución y mantenimiento</strong> de máquinas
-              de coser domésticas e industriales. Nuestro compromiso es brindarte soluciones confiables, asesoría
-              experta y un servicio técnico de calidad, para que tus proyectos textiles funcionen con la mejor
-              precisión.
-            </p>
-          </div>
-        </div>
-
-        <!-- Visión y Misión -->
-        <div class="row justify-content-center g-4">
-          <div class="col-md-5 border border-light p-4 rounded">
-            <div class="text-center">
-              <img src="images/vision.png" class="mb-3 img-fluid" alt="Visión">
-              <h2>Visión</h2>
-            </div>
-            <p class="text-justify">
-              Ser la empresa líder en el suministro de maquinaria y servicios para la industria de la confección en
-              Colombia, reconocida por su calidad, innovación y atención al cliente.
-            </p>
-          </div>
-
-          <div class="col-md-5 border border-light p-4 rounded">
-            <div class="text-center">
-              <img src="images/mision.png" class="mb-3 img-fluid" alt="Misión">
-              <h2>Misión</h2>
-            </div>
-            <p class="text-justify">
-              Brindar soluciones integrales en el sector de la confección, a través de un servicio personalizado y
-              productos de alta calidad.
-            </p>
-          </div>
-        </div>
-
+        <h1 class="fw-bold display-4">¡Bienvenido a <span class="text-danger">Máquinas & Máquinas</span>!</h1>
+        <p class="lead mt-3 text-black fw-normal">
+          Tu aliado en la confección. Ofrecemos máquinas de coser domésticas e industriales, repuestos,
+          mantenimiento y asesoría especializada para que tus proyectos funcionen con la mejor precisión.
+        </p>
+        <a href="#tienda" class="btn btn-danger btn-lg mt-2 fw-semibold">Contacto</a>
       </div>
     </section>
 
+    <!-- Sección de marcas con desplazamiento horizontal -->
+    <section class="brands-section">
+      <h2 class="fw-bold mb-3 text-center">Trabajamos con las mejores marcas del mundo de la costura</h2>
+      <div class="brands-track">
+        <div class="brand-item"><img src="images/Logo_singer.png" alt="Marca 1"></div>
+        <div class="brand-item"><img src="images/Logo_juki.png" alt="Marca 2"></div>
+        <div class="brand-item"><img src="images/Logo_kingter.png" alt="Marca 3"></div>
+        <div class="brand-item"><img src="images/Logo_JINTHEX.png" alt="Marca 4"></div>
+        <div class="brand-item"><img src="images/Logo_KANSAI.png" alt="Marca 5"></div>
+        <div class="brand-item"><img src="images/Logo_JACK.png" alt="Marca 6"></div>
+        <div class="brand-item"><img src="images/Logo_YAMATA.png" alt="Marca 7"></div>
+        <div class="brand-item"><img src="images/Logo_JONTEX.png" alt="Marca 8"></div>
+        <!-- Duplicas para el loop -->
+        <div class="brand-item"><img src="images/Logo_singer.png" alt="Marca 1"></div>
+        <div class="brand-item"><img src="images/Logo_juki.png" alt="Marca 2"></div>
+        <div class="brand-item"><img src="images/Logo_kingter.png" alt="Marca 3"></div>
+        <div class="brand-item"><img src="images/Logo_JINTHEX.png" alt="Marca 4"></div>
+        <div class="brand-item"><img src="images/Logo_KANSAI.png" alt="Marca 5"></div>
+        <div class="brand-item"><img src="images/Logo_JACK.png" alt="Marca 6"></div>
+        <div class="brand-item"><img src="images/Logo_YAMATA.png" alt="Marca 7"></div>
+        <div class="brand-item"><img src="images/Logo_JONTEX.png" alt="Marca 8"></div>
+      </div>
+    </section>
+
+    <!-- 🧰 QUIÉNES SOMOS -->
     <section id="quienes-somos">
       <div class="container">
         <div class="row py-2 justify-content-center">
@@ -301,6 +219,46 @@
               productos de alta calidad.</p>
           </div>
         </div>
+      </div>
+    </section>
+
+    <!-- 🧵 PRODUCTOS DESTACADOS -->
+    <section class="py-5" id="catalogo">
+      <div class="container text-center">
+        <h2 class="fw-bold mb-5">Nuestras máquinas más vendidas</h2>
+        <div class="row">
+          <div class="col-md-4 mb-3">
+            <div class="card h-100 shadow-sm">
+              <img src="images/maquinas/Singer_4423.png" class="card-img-top" alt="Singer 4423">
+              <div class="card-body">
+                <h5 class="card-title">Singer 4423 Heavy Duty</h5>
+                <p>Máquina de coser mecánica de alta velocidad, potente y versátil. Ideal para telas gruesas y proyectos
+                  exigentes.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card h-100 shadow-sm">
+              <img src="images/maquinas/Jack A5E.png" class="card-img-top" alt="Jack A5E">
+              <div class="card-body">
+                <h5 class="card-title">Jack A5E</h5>
+                <p>Máquina recta electrónica de alta velocidad con motor silencioso y corte automático. Precisión,
+                  ahorro y rendimiento profesional.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card h-100 shadow-sm">
+              <img src="images/maquinas/Kingter KT-D3.png" class="card-img-top" alt="Brother GX37">
+              <div class="card-body">
+                <h5 class="card-title">Kingter KT-D3</h5>
+                <p>Máquina plana mecatrónica de alta velocidad con motor directo, bajo consumo y puntada precisa. Ideal
+                  para confección de prendas livianas y medianas.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a href="#catalogo" class="btn btn-danger mt-3">Ver catálogo completo</a>
       </div>
     </section>
 
@@ -350,73 +308,19 @@
     </section>
 
     <!-- 💪 VENTAJAS -->
-    <section class="hero bg-dark-subtle">
-      <div class="container">
-        <img src="images/seccion_ventajas.png" alt="Imagen con degradado" />
-
-        <div class="hero-text">
-          <h2>Calidad, confianza y servicio: tres razones para elegirnos</h2>
-          <p>✅ Experiencia de más de 10 años en el mercado.</p>
-          <p>👩‍🔧 Servicio técnico con personal certificado.</p>
-          <p>⚡ Entregas rápidas en todo el país.</p>
-          <p>🧠 Asesoría antes y después de la venta.</p>
-          <p>🏆 Equipos de marcas reconocidas con garantía.</p>
-        </div>
+    <section class="hero-scroll">
+      <div class="hero-content ">
+        <h1>Calidad, confianza y servicio: tres razones para elegirnos</h1>
+        <p>✅ Experiencia de más de 10 años en el mercado.</p>
+        <p>👩‍🔧 Servicio técnico con personal certificado.</p>
+        <p>⚡ Entregas rápidas en todo el país.</p>
+        <p>🧠 Asesoría antes y después de la venta.</p>
+        <p>🏆 Equipos de marcas reconocidas con garantía.</p>
       </div>
     </section>
-
-
-    <!-- <div class="container-fluid">
-        <div id="fila-cont-elegirnos" class="row">
-          <div id="cont-img-elegirnos" class="col-6 flex-column justify-content-center align-items-center text-center">
-            <div id="img-elegirnos" class="d-flex justify-content-center align-items-center">
-              <img src="images/elegirnos.png" class="img-fluid rounded" alt="Ventajas">
-            </div>
-          </div>
-        </div>
-      </div> -->
-
-    <!-- 🧵 PRODUCTOS DESTACADOS -->
-    <section class="py-5" id="catalogo">
-      <div class="container text-center">
-        <h2 class="fw-bold mb-5">Nuestras máquinas más vendidas</h2>
-        <div class="row">
-          <div class="col-md-4 mb-3">
-            <div class="card h-100 shadow-sm">
-              <img src="img/singer4423.jpg" class="card-img-top" alt="Singer 4423">
-              <div class="card-body">
-                <h5 class="card-title">Singer 4423 Heavy Duty</h5>
-                <p>Potente y resistente, ideal para todo tipo de telas.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-3">
-            <div class="card h-100 shadow-sm">
-              <img src="img/jacka5e.jpg" class="card-img-top" alt="Jack A5E">
-              <div class="card-body">
-                <h5 class="card-title">Jack A5E</h5>
-                <p>Motor inteligente, silencioso y con ajuste automático.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-3">
-            <div class="card h-100 shadow-sm">
-              <img src="img/brothergx37.jpg" class="card-img-top" alt="Brother GX37">
-              <div class="card-body">
-                <h5 class="card-title">Brother GX37</h5>
-                <p>Ideal para modistas y talleres pequeños.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <a href="#catalogo" class="btn btn-primary mt-3">Ver catálogo completo</a>
-      </div>
-    </section>
-
-
 
     <!-- 📸 GALERÍA -->
-    <section class="py-5">
+    <!-- <section class="py-5">
       <div class="container text-center">
         <h2 class="fw-bold mb-4">Un vistazo a nuestro trabajo</h2>
         <div class="row g-3 gallery">
@@ -425,23 +329,22 @@
           <div class="col-md-4"><img src="img/galeria3.jpg" class="img-fluid" alt="Tienda de máquinas"></div>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <!-- 🛍️ CÓMO COMPRAR -->
     <section class="py-5 bg-light">
       <div class="container text-center">
-        <h2 class="fw-bold mb-4">Compra fácil y segura en tres pasos</h2>
+        <h2 class="fw-bold mb-4 text-danger">Compra fácil y segura</h2>
         <ol class="list-unstyled lead">
           <li>🔍 <strong>Elige tu máquina ideal</strong> desde nuestro catálogo o con ayuda de un asesor.</li>
           <li>💬 <strong>Confirma tu pedido</strong> por WhatsApp o llamada.</li>
-          <li>🚚 <strong>Recíbela en tu puerta</strong>, lista para trabajar.</li>
         </ol>
-        <a href="#contacto" class="btn btn-outline-primary">Contáctanos</a>
+        <a href="#contacto" class="btn btn-outline-danger">Contáctanos</a>
       </div>
     </section>
 
     <!-- 🧠 BLOG -->
-    <section class="py-5">
+    <!-- <section class="py-5">
       <div class="container text-center">
         <h2 class="fw-bold mb-4">Aprende con nosotros</h2>
         <div class="row">
@@ -468,10 +371,53 @@
           </div>
         </div>
       </div>
+    </section> -->
+
+    <section id="repuestos" class="py-5 ">
+      <div class="container">
+        <h2 class="mb-4 text-center">Repuestos</h2>
+        <p class="text-center mb-4">Piezas originales y compatibles para todo tipo de máquinas de coser.</p>
+
+        <div class="row g-4">
+          <div class="col-md-4 ">
+            <div class="card h-100 ">
+              <img src="images/maquinas/Jack A5E.png" class="card-img-top" alt="Agujas" loading="lazy">
+              <div class="card-body ">
+                <h5 class="card-title">Agujas y portagujas</h5>
+                <p class="card-text">Variedad de grosores y largos para telas delicadas y pesadas.</p>
+                <a href="#contacto" class="btn btn-danger">Contactanos</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card h-100">
+              <img src="images/maquinas/Kingter KT-D3.png" class="card-img-top" alt="Hilos" loading="lazy">
+              <div class="card-body">
+                <h5 class="card-title">Bobinas</h5>
+                <p class="card-text">Hilos de poliéster y algodón, resistente al desgaste y disponible en múltiples
+                  colores.</p>
+                <a href="#contacto" class="btn btn-danger">Contactanos</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card h-100">
+              <img src="images/maquinas/Singer_4423.png" class="card-img-top" alt="Motores" loading="lazy">
+              <div class="card-body">
+                <h5 class="card-title">Motores y piezas eléctricas</h5>
+                <p class="card-text">Repuestos para modelos domésticos e industriales con garantía.</p>
+                <a href="#contacto" class="btn btn-danger">Contactanos</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- 📍 VISÍTANOS -->
-    <section class="py-5 bg-light" id="contacto">
+    <!-- <section class="py-5 bg-light" id="contacto">
       <div class="container text-center">
         <h2 class="fw-bold mb-4">¡Ven a conocernos!</h2>
         <p>Estamos ubicados en <strong>[Dirección completa]</strong>. Recibe asesoría personalizada y encuentra todos
@@ -480,10 +426,10 @@
         <p>📞 <strong>Teléfono:</strong> [Número]</p>
         <p>💬 <strong>WhatsApp:</strong> [Número]</p>
       </div>
-    </section>
+    </section> -->
 
     <!-- 💌 CTA FINAL -->
-    <section class="py-5 text-center bg-primary text-white">
+    <section class="py-5 text-center  text-white">
       <div class="container">
         <h2 class="fw-bold">¡Tu próxima gran puntada empieza aquí!</h2>
         <p>Contáctanos hoy mismo y lleva tu negocio de confección al siguiente nivel.</p>
@@ -493,51 +439,7 @@
     </section>
 
 
-    <section id="repuestos" class="py-5 bg-light">
-      <div class="container">
-        <h2 class="mb-4 text-center">Repuestos</h2>
-        <p class="text-center mb-4">Piezas originales y compatibles para todo tipo de máquinas de coser.</p>
 
-        <div class="row g-4">
-          <div class="col-md-4">
-            <div class="card h-100">
-              <img src="https://via.placeholder.com/600x400?text=Agujas+de+coser" class="card-img-top" alt="Agujas"
-                loading="lazy">
-              <div class="card-body">
-                <h5 class="card-title">Agujas y portagujas</h5>
-                <p class="card-text">Variedad de grosores y largos para telas delicadas y pesadas.</p>
-                <a href="#contacto" class="btn btn-primary">Pedir presupuesto</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-4">
-            <div class="card h-100">
-              <img src="https://via.placeholder.com/600x400?text=Carretes+de+hilo" class="card-img-top" alt="Hilos"
-                loading="lazy">
-              <div class="card-body">
-                <h5 class="card-title">Hilos y bobinas</h5>
-                <p class="card-text">Hilos de poliéster y algodón, resistente al desgaste y disponible en múltiples
-                  colores.</p>
-                <a href="#contacto" class="btn btn-primary">Solicitar muestra</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-4">
-            <div class="card h-100">
-              <img src="https://via.placeholder.com/600x400?text=Motor+repuesto" class="card-img-top" alt="Motores"
-                loading="lazy">
-              <div class="card-body">
-                <h5 class="card-title">Motores y piezas eléctricas</h5>
-                <p class="card-text">Repuestos para modelos domésticos e industriales con garantía.</p>
-                <a href="#contacto" class="btn btn-primary">Consultar compatibilidad</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
 
     <section id="servicios" class="py-5">
       <div class="container">
@@ -646,60 +548,6 @@
       </div>
     </section>
 
-    <section id="contacto" class="py-5 bg-light">
-      <div class="container">
-        <h2 class="mb-4 text-center">Contacto</h2>
-        <div class="row">
-          <div class="col-lg-6 mb-4">
-            <form id="contactForm" novalidate>
-              <div class="mb-3">
-                <label for="nombre" class="form-label">Nombre</label>
-                <input type="text" class="form-control" id="nombre" name="nombre" required aria-required="true"
-                  placeholder="Tu nombre">
-                <div class="invalid-feedback">Por favor ingresa tu nombre.</div>
-              </div>
-
-              <div class="mb-3">
-                <label for="email" class="form-label">Correo</label>
-                <input type="email" class="form-control" id="email" name="email" required placeholder="tu@correo.com">
-                <div class="invalid-feedback">Introduce un correo válido.</div>
-              </div>
-
-              <div class="mb-3">
-                <label for="mensaje" class="form-label">Mensaje</label>
-                <textarea class="form-control" id="mensaje" name="mensaje" rows="5" required
-                  placeholder="¿En qué podemos ayudarte?"></textarea>
-                <div class="invalid-feedback">Escribe tu consulta.</div>
-              </div>
-
-              <div class="d-flex gap-2">
-                <button type="submit" class="btn btn-success">Enviar mensaje</button>
-                <button type="reset" class="btn btn-outline-secondary">Limpiar</button>
-              </div>
-            </form>
-          </div>
-
-          <div class="col-lg-6">
-            <div class="mb-3">
-              <h5>Visítanos</h5>
-              <p>Calle Falsa 123, Ciudad — Horario: Lunes a Viernes 9:00–18:00</p>
-            </div>
-
-            <div class="mb-3">
-              <h5>Teléfono</h5>
-              <p><a href="tel:+34123456789">+34 123 456 789</a></p>
-            </div>
-
-            <div class="mb-3">
-              <h5>Mapa</h5>
-              <img src="https://via.placeholder.com/800x400?text=Mapa+de+ubicaci%C3%B3n" alt="Mapa de ubicación"
-                class="img-fluid rounded">
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <script>
       (function () {
         'use strict'
@@ -720,9 +568,176 @@
       })()
     </script>
   </main>
-  <footer>
-    <p>&copy; 2023 Maquinas & Maquinas</p>
+
+  <!-- <footer class="footer mt-5">
+    <div class="container py-5">
+      <div class="row text-center text-md-start">
+
+        <- Columna 1: Logo y descripción 
+        <div class="col-md-4 mb-4">
+          <h3 class="fw-bold mb-3 text-uppercase">Máquinas & Máquinas</h3>
+          <p>Expertos en venta, distribución y mantenimiento de máquinas de coser domésticas e industriales.
+            Calidad, confianza y servicio técnico especializado.</p>
+        </div>
+
+        <-- Columna 2: Enlaces rápidos 
+        <div class="col-md-4 mb-4">
+          <h5 class="fw-bold mb-3 text-uppercase">Enlaces</h5>
+          <ul class="list-unstyled">
+            <li><a href="#inicio" class="footer-link">Inicio</a></li>
+            <li><a href="#quienes-somos" class="footer-link">Quiénes Somos</a></li>
+            <li><a href="#productos" class="footer-link">Productos</a></li>
+            <li><a href="#contacto" class="footer-link">Contacto</a></li>
+          </ul>
+        </div>
+
+        <-- Columna 3: Contacto 
+        <div class="col-md-4 mb-4">
+          <h5 class="fw-bold mb-3 text-uppercase">Contáctanos</h5>
+          <p><i class="bi bi-telephone-fill me-2"></i> +57 320 456 7890</p>
+          <p><i class="bi bi-envelope-fill me-2"></i> contacto@maquinasymaquinas.com</p>
+          <p><i class="bi bi-geo-alt-fill me-2"></i> Cúcuta, Norte de Santander - Colombia</p>
+
+          <-- Redes Sociales -
+          <div class="d-flex justify-content-center justify-content-md-start gap-3 mt-3">
+            <a href="#" class="social-icon"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="social-icon"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="social-icon"><i class="bi bi-whatsapp"></i></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom py-3 text-center">
+      <p class="mb-0">&copy; 2025 <strong>Máquinas & Máquinas</strong>. Todos los derechos reservados.</p>
+    </div>
+  </footer> -->
+
+  <footer class="footer mt-auto">
+    <div class="container py-5">
+      <div class="row text-center text-md-start">
+
+        <!-- Columna 1: Logo y descripción -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="footer-logo mb-3">
+            <img src="images/Logo transparente.png" alt="Logo Máquinas & Máquinas" class="img-fluid"
+              style="max-width: 200px;">
+          </div>
+          <h3 class="fw-bold mb-3 text-uppercase">Máquinas & Máquinas</h3>
+          <p>Expertos en venta, distribución y mantenimiento de máquinas de coser domésticas e industriales.
+            Más de 10 años ofreciendo calidad, confianza y servicio técnico especializado.</p>
+          <p class="mt-3"><small>Tu aliado en la confección profesional</small></p>
+        </div>
+
+        <!-- Columna 2: Enlaces rápidos -->
+        <div class="col-lg-2 col-md-6 mb-4">
+          <h5 class="fw-bold mb-3 text-uppercase">Enlaces</h5>
+          <ul class="list-unstyled">
+            <li><a href="#inicio" class="footer-link">Inicio</a></li>
+            <li><a href="#quienes-somos" class="footer-link">Quiénes Somos</a></li>
+            <li><a href="#productos" class="footer-link">Productos</a></li>
+            <li><a href="#servicios" class="footer-link">Servicios</a></li>
+            <li><a href="#contacto" class="footer-link">Contacto</a></li>
+          </ul>
+        </div>
+
+        <!-- Columna 3: Productos -->
+        <div class="col-lg-2 col-md-6 mb-4">
+          <h5 class="fw-bold mb-3 text-uppercase">Productos</h5>
+          <ul class="list-unstyled">
+            <li><a href="#maquinas-domesticas" class="footer-link">Máquinas Domésticas</a></li>
+            <li><a href="#maquinas-industriales" class="footer-link">Máquinas Industriales</a></li>
+            <li><a href="#repuestos" class="footer-link">Repuestos</a></li>
+            <li><a href="#accesorios" class="footer-link">Accesorios</a></li>
+          </ul>
+        </div>
+
+        <!-- Columna 4: Contacto -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <h5 class="fw-bold mb-3 text-uppercase">Contáctanos</h5>
+
+          <div class="contact-info">
+            <i class="bi bi-telephone-fill"></i>
+            <span>+57 320 652 4049</span>
+          </div>
+
+          <div class="contact-info">
+            <i class="bi bi-envelope-fill"></i>
+            <span>contacto@maquinasymaquinas.com</span>
+          </div>
+
+          <div class="contact-info">
+            <i class="bi bi-geo-alt-fill"></i>
+            <span>Calle 17 # 16-41, Cúcuta<br>Norte de Santander - Colombia</span>
+          </div>
+
+          <div class="contact-info">
+            <i class="bi bi-clock-fill"></i>
+            <span>Lunes a Sábado<br>8:00 AM - 6:00 PM</span>
+          </div>
+
+          <!-- Redes Sociales -->
+          <div class="d-flex justify-content-center justify-content-md-start gap-3 mt-4">
+            <a href="https://www.facebook.com" target="_blank" class="social-icon" aria-label="Facebook">
+              <i class="bi bi-facebook"></i>
+            </a>
+            <a href="https://www.instagram.com" target="_blank" class="social-icon" aria-label="Instagram">
+              <i class="bi bi-instagram"></i>
+            </a>
+            <a href="https://wa.me/573206524049" target="_blank" class="social-icon" aria-label="WhatsApp">
+              <i class="bi bi-whatsapp"></i>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom py-3 text-center">
+      <p class="mb-0">&copy; 2025 <strong>Máquinas & Máquinas</strong>. Todos los derechos reservados. | Diseñado con ❤️
+        para la industria de la confección</p>
+    </div>
   </footer>
+
+  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Efecto scroll en navbar
+    window.addEventListener('scroll', function() {
+      const navbar = document.querySelector('.navbar-custom');
+      if (window.scrollY > 50) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+    });
+
+    // Resaltar enlace activo al hacer scroll
+    window.addEventListener('scroll', function() {
+      const sections = document.querySelectorAll('section[id]');
+      const navLinks = document.querySelectorAll('.nav-link');
+      
+      let current = '';
+      
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+        if (scrollY >= (sectionTop - 200)) {
+          current = section.getAttribute('id');
+        }
+      });
+
+      navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href').slice(1) === current) {
+          link.classList.add('active');
+        }
+      });
+    });
+  </script> -->
+
 </body>
+
+
 
 </html>
