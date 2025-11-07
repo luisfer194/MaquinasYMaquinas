@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maquinas</title>
+  <link rel="icon" href="images/icono.svg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/maquinas.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="js/maquinas.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" defer></script>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+</head>
+
+<body>
+
+  <!-- WhatsApp flotante -->
+  <a href="https://wa.me/573246524049" class="whatsapp-float" target="_blank">
+    <i class="bi bi-whatsapp"></i>
+  </a>
+
+  <!-- Navbar  barra de navegacion -->
+  <header>
+    <div class="container">
+      <div class="row">
+        <!-- Columna del Logo -->
+        <div class="col-md-4 col-6 justify-content-center d-flex">
+          <img src="images/Logo transparente.png" alt="Logo de la empresa">
+        </div>
+
+        <!-- Columna de Contacto y Redes Sociales -->
+        <div class="col-md-8 col-6 d-flex align-items-center justify-content-around gap-3">
+
+          <!-- Contenedor principal para Info y Redes -->
+          <div class="row w-100 justify-content-center">
+
+            <!-- Columna de Información de Contacto (Ocupa col-md-8 en pantallas medianas/grandes) -->
+            <div class="col-12 col-md-8 d-flex justify-content-center align-items-center ">
+              <!-- Usamos d-flex flex-column para apilar los elementos verticalmente -->
+              <div id="cont_info" class="d-flex justify-content-center">
+
+                <!-- Info WhatsApp -->
+                <a href="https://wa.me/573246524049" class="contact-info-header text-decoration-none">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="green">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path
+                      d="M18.497 4.409a10 10 0 0 1 -10.36 16.828l-.223 -.098l-4.759 .849l-.11 .011a1 1 0 0 1 -.11 0l-.102 -.013l-.108 -.024l-.105 -.037l-.099 -.047l-.093 -.058l-.014 -.011l-.012 -.007l-.086 -.073l-.077 -.08l-.067 -.088l-.056 -.094l-.034 -.07l-.04 -.108l-.028 -.128l-.012 -.102a1 1 0 0 1 0 -.125l.012 -.1l.024 -.11l.045 -.122l1.433 -3.304l-.009 -.014a10 10 0 0 1 1.549 -12.454l.215 -.203a10 10 0 0 1 13.226 -.217m-8.997 3.09a1.5 1.5 0 0 0 -1.5 1.5v1a6 6 0 0 0 6 6h1a1.5 1.5 0 0 0 0 -3h-1l-.144 .007a1.5 1.5 0 0 0 -1.128 .697l-.042 .074l-.022 -.007a4.01 4.01 0 0 1 -2.435 -2.435l-.008 -.023l.075 -.041a1.5 1.5 0 0 0 .704 -1.272v-1a1.5 1.5 0 0 0 -1.5 -1.5" />
+                  </svg>
+                  <span>3246524049</span>
+                </a>
+                <!-- Ubicación -->
+                <div class="contact-info-header d-none d-md-block">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="red">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path
+                      d="M18.364 4.636a9 9 0 0 1 .203 12.519l-.203 .21l-4.243 4.242a3 3 0 0 1 -4.097 .135l-.144 -.135l-4.244 -4.243a9 9 0 0 1 12.728 -12.728zm-6.364 3.364a3 3 0 1 0 0 6a3 3 0 0 0 0 -6z" />
+                  </svg>
+                  <span>Calle 17 # 16-41</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Columna de Redes Sociales (Ocupa col-md-4 restante) -->
+            <div class="col-12 col-md-4">
+              <div class="d-flex justify-content-center justify-content-md-end gap-3">
+                <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"
+                  class="social-header facebook" aria-label="Facebook">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"
+                    fill="currentColor">
+                    <path
+                      d="M22 12.07C22 6.48 17.52 2 11.93 2S2 6.48 2 12.07c0 4.99 3.66 9.13 8.44 9.92v-7.02H8.12v-2.9h2.32V9.84c0-2.3 1.37-3.57 3.46-3.57.99 0 2.03.18 2.03.18v2.23h-1.14c-1.13 0-1.48.7-1.48 1.41v1.7h2.52l-.4 2.9h-2.12v7.02C18.34 21.2 22 17.06 22 12.07z" />
+                  </svg>
+                </a>
+                <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"
+                  class="social-header instagram" aria-label="Instagram">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"
+                    fill="currentColor">
+                    <path
+                      d="M7 2C4.24 2 2 4.24 2 7v10c0 2.76 2.24 5 5 5h10c2.76 0 5-2.24 5-5V7c0-2.76-2.24-5-5-5H7zm10 2c1.66 0 3 1.34 3 3v10c0 1.66-1.34 3-3 3H7c-1.66 0-3-1.34-3-3V7c0-1.66 1.34-3 3-3h10zM12 7.5A4.5 4.5 0 1 0 12 16.5 4.5 4.5 0 1 0 12 7.5zm0 2A2.5 2.5 0 1 1 12 14a2.5 2.5 0 0 1 0-4.5zM17.7 6.3a1.05 1.05 0 1 1-2.1 0 1.05 1.05 0 0 1 2.1 0z" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- 🔽 El navbar separado para aplicar sticky correctamente -->
+  <nav class="navbar sticky-top navbar-expand-lg bg-white">
+    <div class="container">
+      <!-- Logo o nombre (opcional) -->
+      <a class="navbar-brand" href="index.html">Maquinas & Maquinas</a>
+
+      <!-- 🔹 Botón del menú alineado a la derecha -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Menú -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Inicio </a></li>
+          <li class="nav-item"><a class="nav-link" href="maquinas.html">Máquinas </a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Repuestos </a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
+        </ul>
+        <a href="https://wa.me/573246524049" class="boton-whatsapp">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path
+              d="M18.497 4.409a10 10 0 0 1 -10.36 16.828l-.223 -.098l-4.759 .849l-.11 .011a1 1 0 0 1 -.11 0l-.102 -.013l-.108 -.024l-.105 -.037l-.099 -.047l-.093 -.058l-.014 -.011l-.012 -.007l-.086 -.073l-.077 -.08l-.067 -.088l-.056 -.094l-.034 -.07l-.04 -.108l-.028 -.128l-.012 -.102a1 1 0 0 1 0 -.125l.012 -.1l.024 -.11l.045 -.122l1.433 -3.304l-.009 -.014a10 10 0 0 1 1.549 -12.454l.215 -.203a10 10 0 0 1 13.226 -.217m-8.997 3.09a1.5 1.5 0 0 0 -1.5 1.5v1a6 6 0 0 0 6 6h1a1.5 1.5 0 0 0 0 -3h-1l-.144 .007a1.5 1.5 0 0 0 -1.128 .697l-.042 .074l-.022 -.007a4.01 4.01 0 0 1 -2.435 -2.435l-.008 -.023l.075 -.041a1.5 1.5 0 0 0 .704 -1.272v-1a1.5 1.5 0 0 0 -1.5 -1.5" />
+          </svg>
+          Contáctanos ahora
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 1 Seccion de ecabezado de la pagina maquinas-->>
+  <section class="page-hero">
+    <div class="container">
+      <h1 class="display-4 fw-bold mb-3">Catálogo de Máquinas de Coser</h1>
+      <p class="lead">Encuentra la máquina perfecta para tu proyecto</p>
+    </div>
+
+    <section class="search-section">
+      <div class="container">
+        <div class="search-bar position-relative">
+          <i class="bi bi-search search-icon"></i>
+          <input type="text" id="searchInput" class="form-control search-input"
+            placeholder="Buscar por marca, modelo, característica o precio...">
+        </div>
+      </div>
+    </section>
+
+  </section>
+
+  <section class="filters-section">
+    <div class="container">
+      <div class="row align-items-center mb-3">
+        <div class="col-md-6">
+          <h5 class="mb-0"><i class="bi bi-funnel me-2"></i>Filtrar resultados</h5>
+        </div>
+        <div class="col-md-6 text-end">
+          <button class="btn btn-sm btn-outline-danger" onclick="resetFilters()">
+            <i class="bi bi-x-circle me-1"></i>Limpiar filtros
+          </button>
+        </div>
+      </div>
+
+      <div class="row">
+        <!-- Filtro Tipo -->
+        <div class="col-md-4 mb-3">
+          <label class="form-label fw-bold">
+            <i class="bi bi-tag me-2"></i>Tipo de máquina
+          </label>
+          <select class="form-select filter-select" id="filtroTipo" data-filter-type="tipo">
+            <option value="all">Todas las máquinas</option>
+            <option value="domestica">Máquinas Domésticas</option>
+            <option value="industrial">Máquinas Industriales</option>
+          </select>
+        </div>
+
+        <!-- Filtro Marca -->
+        <div class="col-md-4 mb-3">
+          <label class="form-label fw-bold">
+            <i class="bi bi-bookmark me-2"></i>Marca
+          </label>
+          <select class="form-select filter-select" id="filtroMarca" data-filter-type="marca">
+            <option value="all">Todas las marcas</option>
+            <option value="singer">Singer</option>
+            <option value="juki">Juki</option>
+            <option value="jack">Jack</option>
+            <option value="kingter">Kingter</option>
+            <option value="brother">Brother</option>
+          </select>
+        </div>
+
+        <!-- Filtro Precio -->
+        <div class="col-md-4 mb-3">
+          <label class="form-label fw-bold">
+            <i class="bi bi-cash me-2"></i>Rango de precio
+          </label>
+          <select class="form-select filter-select" id="filtroPrecio" data-filter-type="precio">
+            <option value="all">Todos los precios</option>
+            <option value="0-1000000">Hasta $1.000.000</option>
+            <option value="1000000-3000000">$1.000.000 - $3.000.000</option>
+            <option value="3000000-999999999">Más de $3.000.000</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Etiquetas de filtros activos -->
+      <div id="activeFilters" class="mt-3"></div>
+    </div>
+  </section>
+
+  <main class="py-5">
+    <div class="container">
+      <div class="results-info">
+        <span id="resultsCount">Cargando productos...</span>
+      </div>
+
+      <!-- Loading -->
+      <div id="loading" class="loading">
+        <div class="spinner"></div>
+        <p class="mt-3">Cargando catálogo...</p>
+      </div>
+
+      <!-- Grid de productos -->
+      <div id="productGrid" class="row"></div>
+
+      <!-- Sin resultados -->
+      <div id="noResults" class="no-results">
+        <i class="bi bi-search"></i>
+        <h3>No se encontraron resultados</h3>
+        <p class="text-muted">Intenta con otros términos de búsqueda o filtros</p>
+        <button class="btn btn-outline-danger mt-3" onclick="resetFilters()">
+          <i class="bi bi-arrow-clockwise me-2"></i>Limpiar filtros
+        </button>
+      </div>
+    </div>
+  </main>
+
+  <!-- Modal de detalles -->
+  <div class="modal fade" id="productModal" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalTitle"></h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body" id="modalBody"></div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <footer class="footer mt-auto">
+    <div class="container py-5">
+      <div class="row text-center text-md-start">
+
+        <!-- Columna 1: Logo y descripción -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="footer-logo mb-3">
+            <img src="images/Logo transparente.png" alt="Logo Máquinas & Máquinas" class="img-fluid"
+              style="max-width: 200px;">
+          </div>
+          <h3 class="fw-bold mb-3 text-uppercase">Máquinas & Máquinas</h3>
+          <p>Expertos en venta, distribución y mantenimiento de máquinas de coser domésticas e industriales.
+            Más de 10 años ofreciendo calidad, confianza y servicio técnico especializado.</p>
+          <p class="mt-3"><small>Tu aliado en la confección profesional</small></p>
+        </div>
+
+        <!-- Columna 2: Enlaces rápidos -->
+        <div class="col-lg-2 col-md-6 mb-4">
+          <h5 class="fw-bold mb-3 text-uppercase">Enlaces</h5>
+          <ul class="list-unstyled">
+            <li><a href="#inicio" class="footer-link">Inicio</a></li>
+            <li><a href="#quienes-somos" class="footer-link">Quiénes Somos</a></li>
+            <li><a href="#productos" class="footer-link">Productos</a></li>
+            <li><a href="#servicios" class="footer-link">Servicios</a></li>
+            <li><a href="#contacto" class="footer-link">Contacto</a></li>
+          </ul>
+        </div>
+
+        <!-- Columna 3: Productos -->
+        <div class="col-lg-2 col-md-6 mb-4">
+          <h5 class="fw-bold mb-3 text-uppercase">Productos</h5>
+          <ul class="list-unstyled">
+            <li><a href="#maquinas-domesticas" class="footer-link">Máquinas Domésticas</a></li>
+            <li><a href="#maquinas-industriales" class="footer-link">Máquinas Industriales</a></li>
+            <li><a href="#repuestos" class="footer-link">Repuestos</a></li>
+            <li><a href="#accesorios" class="footer-link">Accesorios</a></li>
+          </ul>
+        </div>
+
+        <!-- Columna 4: Contacto -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <h5 class="fw-bold mb-3 text-uppercase">Contáctanos</h5>
+
+          <div class="contact-info">
+            <i class="bi bi-telephone-fill"></i>
+            <span>+57 320 652 4049</span>
+          </div>
+
+          <div class="contact-info">
+            <i class="bi bi-envelope-fill"></i>
+            <span>contacto@maquinasymaquinas.com</span>
+          </div>
+
+          <div class="contact-info">
+            <i class="bi bi-geo-alt-fill"></i>
+            <span>Calle 17 # 16-41, Cúcuta<br>Norte de Santander - Colombia</span>
+          </div>
+
+          <div class="contact-info">
+            <i class="bi bi-clock-fill"></i>
+            <span>Lunes a Sábado<br>8:00 AM - 6:00 PM</span>
+          </div>
+
+          <!-- Redes Sociales -->
+          <div class="d-flex justify-content-center justify-content-md-start gap-3 mt-4">
+            <a href="https://www.facebook.com" target="_blank" class="social-icon" aria-label="Facebook">
+              <i class="bi bi-facebook"></i>
+            </a>
+            <a href="https://www.instagram.com" target="_blank" class="social-icon" aria-label="Instagram">
+              <i class="bi bi-instagram"></i>
+            </a>
+            <a href="https://wa.me/573206524049" target="_blank" class="social-icon" aria-label="WhatsApp">
+              <i class="bi bi-whatsapp"></i>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom py-3 text-center">
+      <p class="mb-0">&copy; 2025 <strong>Máquinas & Máquinas</strong>. Todos los derechos reservados. | Diseñado con ❤️
+        para la industria de la confección</p>
+    </div>
+  </footer>
+
+</body>
+
+</html>
