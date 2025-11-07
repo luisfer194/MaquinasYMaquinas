@@ -861,7 +861,6 @@ main section:nth-child(10) {
   header img {
     margin: auto;
     width: 13rem;
-    height: fit-content;
     margin-left: 40px;
   }
   /*Estilos para el contenedor de el icono de WhatSapp y Ubicacion*/
