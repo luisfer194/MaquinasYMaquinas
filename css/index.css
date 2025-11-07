@@ -27,6 +27,11 @@ body {
   --rojo-hover: #b71c1c;
   --gris-claro: #f8f9fa;
   --texto-oscuro: #2d2d2d;
+
+  --primary-red: #8b0000;
+  --accent-red: #dc143c;
+  --dark-bg: #1a0000;
+  --light-text: #ffffff;
 }
 
 /* --------------------------------------------------------------------------------
@@ -40,7 +45,7 @@ header img {
 }
 
 header img:hover {
-  transform: scale(1.05);
+  transform: scale(1.1);
 }
 
 .contact-info-header {
@@ -110,42 +115,118 @@ header img:hover {
 /* ----------------------------------------------------------------------------------
                         Estilo para la barra de navegacion-------------------------
 -------------------------------------------------------------------------------------*/
+.navbar-brand {
+  font-size: 1.4rem !important;
+  font-weight: 700;
+  color: var(--texto-oscuro) !important;
+  transition: color 0.3s ease;
+}
 
-nav {
-  align-items: center;
-  gap: 112rem;
-  display: flex;
+.navbar-brand:hover {
+  color: var(--rojo-hover) !important;
+}
 
-  a {
-    font-size: 1.125rem;
-  }
+.navbar-nav {
+  gap: 0;
 }
 
 .nav-item {
-  border-right: 1px solid black;
+  position: relative;
   padding: 0px 25px 0px 25px;
-
-  a {
-    font-size: 1.125rem;
-    font-weight: 500;
-    color: black;
-
-    &:hover {
-      color: var(--rojo);
-    }
-  }
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: black;
 }
 
-@media (max-width: 950px) {
-  .nav-item {
-    border: none;
-  }
+.nav-item:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 15%;
+  height: 30px;
+  width: 3px;
+  background: rgba(0, 0, 0, 0.712);
 }
 
+.nav-link {
+  font-size: 1.125rem !important;
+  font-weight: 500;
+  color: var(--background) !important;
+  padding: 0.5rem 0 !important;
+  position: relative;
+  transition: color 0.3s ease;
+}
 
-/* ----------------------------------------------------------------------------------
-                      final del estilo para la barra de navegacion--------------------
--------------------------------------------------------------------------------------*/
+.nav-link::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background: var(--rojo-hover);
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover {
+  color: var(--brand-red) !important;
+}
+
+.nav-link:hover::before {
+  width: 100%;
+}
+
+.nav-link.active::before {
+  width: 100%;
+}
+
+/* Botón WhatsApp */
+.boton-whatsapp {
+  background: linear-gradient(
+    45deg,
+    #25d366 0%,
+    /* Verde WhatsApp principal */ #20c659 25%,
+    /* Verde medio */ #1ebea5 50%,
+    /* Verde agua */ #00a884 75%,
+    /* Verde oscuro */ #007c65 100% /* Verde profundo */
+  );
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  border: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(37, 211, 102, 0.3);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.125rem;
+}
+
+.boton-whatsapp:hover {
+  color: white;
+  transform: translateY(-30px);
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(37, 211, 102, 0.5);
+  filter: brightness(1.1);
+}
+
+.boton-whatsapp svg {
+  width: 1.6rem;
+  height: auto;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
 
 /* ---------------------------------------------------------------------------------
                           Estilo para el carrusel de marcas ------------------------
@@ -178,8 +259,8 @@ nav {
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
-  border: 1px solid rgb(0, 0, 0);
-  border-radius: 35px;
+  border: 1px solid #000000b6;
+  border-radius: 25px;
 }
 
 .brand-item img {
@@ -199,7 +280,7 @@ nav {
 
 @keyframes scroll {
   from {
-    transform: translateX();
+    transform: translateX(0);
   }
   to {
     transform: translateX(-50%);
@@ -208,76 +289,320 @@ nav {
 /* ----------------------------------------------------------------------------------
                   final de estilo para el carrusel de marcas-------------------------
 ------------------------------------------------------------------------------------*-/
+
 /* ----------------------------------------------------------------------------------
                 Incio de estilos del contenedor de quienes somos ---------------------
   -----------------------------------------------------------------------------------*/
 
 #quienes-somos {
-  display: flex;
-  padding-top: 50px;
-  padding-bottom: 65px;
-  background-color: rgb(65, 0, 0);
-  background-image: linear-gradient(
-    to bottom,
-    rgb(155, 0, 0),
-    rgba(255, 0, 0, 0)
+  position: relative;
+  background: linear-gradient(
+    135deg,
+    var(--dark-bg) 0%,
+    var(--primary-red) 50%,
+    var(--dark-bg) 100%
   );
-  opacity: 0.9;
-  color: #fff;
+  color: var(--light-text);
+  min-height: 70vh;
+  display: flex;
   align-items: center;
-
-  > .container > .row:first-child img {
-    width: 40%;
-    border-radius: 50px !important;
-  }
-
-  @media (max-width: 450px) {
-    > .container > .row:first-child img {
-      width: 100% !important; /* o el tamaño que desees */
-      max-width: 400px;
-      margin: 0 auto;
-      display: block;
-    }
-  }
-
-  p,
-  h2 {
-    padding: 0 10px;
-    text-align: justify;
-  }
+  padding: 40px 0;
+  overflow: hidden;
 }
-/* Ajustando el contenido de Mision y Vision*/
-.cont-vision-mision {
-  padding: 25px;
-  border-radius: 50px;
-  img {
-    display: flex;
-    margin: auto;
-    background-color: #fff;
-    padding: 5px;
-    width: 150px !important;
-    border-radius: 50px !important;
-  }
 
-  @media (max-width: 450px) {
-    img {
-      width: 50% !important; /* o el tamaño que desees */
-      margin: 0 auto;
-      padding: 15px;
-      display: block;
-    }
-  }
+#quienes-somos::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(
+      circle at 20% 50%,
+      rgba(220, 20, 60, 0.1) 0%,
+      transparent 50%
+    ),
+    radial-gradient(circle at 80% 50%, rgba(139, 0, 0, 0.1) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 300px 2px 2fr;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.hero-image-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-image-wrapper {
+  position: relative;
+  max-width: 450px;
+  width: 100%;
+}
+
+.hero-image-wrapper::before {
+  content: '';
+  position: absolute;
+  top: -15px;
+  left: -15px;
+  right: 15px;
+  bottom: 15px;
+  border: 3px solid var(--accent-red);
+  border-radius: 30px;
+  z-index: -1;
+}
+
+.hero-image {
+  width: 100%;
+  border-radius: 30px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+  display: block;
+}
+
+.divider-line {
+  width: 10px;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    var(--accent-red),
+    transparent
+  );
+  min-height: 300px;
+  margin-left: 15px ;
+}
+
+.hero-text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0px 0px 0px 42px;
+}
+
+.main-title {
+  font-size: 2rem;
+  font-weight: 800;
+  text-align: left;
+  margin-bottom: 25px;
+  background: linear-gradient(90deg, #fff 0%, #ffcccc 50%, #fff 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.lead-text {
+  font-size: 1.1rem;
+  text-align: justify;
+}
+
+.vision-mission-container {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.card-vm {
+  position: relative;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 25px;
+  padding: 25px 15px;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: hidden;
+}
+
+.card-vm::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background: linear-gradient(90deg, var(--accent-red), transparent);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s ease;
+}
+
+.card-vm:hover {
+  transform: translateY(-10px);
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(220, 20, 60, 0.5);
+  box-shadow: 0 20px 40px rgba(220, 20, 60, 0.2);
+}
+
+.card-vm:hover::before {
+  transform: scaleX(1);
+}
+
+.card-icon {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto 25px;
+  padding: 20px;
+  background: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.card-vm:hover .card-icon {
+  transform: scale(1.1) rotate(5deg);
+  box-shadow: 0 15px 40px rgba(220, 20, 60, 0.4);
+}
+
+.card-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.card-title {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+.card-text {
+  font-size: 1.05rem;
+  text-align: center;
 }
 
 /* ----------------------------------------------------------------------------------
                 final de estilo del contenedor de quienes somos ----------------------
 -------------------------------------------------------------------------------------*/
+
+/* ----------------------------------------------------------------------------------
+                /* Estadísticas  ----------------------
+-------------------------------------------------------------------------------------*/
+.stats-section {
+  background: white;
+  padding: 60px 0 !important;
+
+  p {
+    color: #000000;
+    font-size: 1.125rem !important;
+    font-weight: 500;
+  }
+}
+
+.stat-card {
+  text-align: center;
+  padding: 30px 20px;
+  border: 2px solid #eee;
+  border-radius: 15px;
+  background-color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: scale(1.05);
+  border-color: var(--brand-red);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.stat-card i {
+  font-size: 3rem;
+  color: var(--brand-red);
+  margin-bottom: 15px;
+}
+
+.stat-card h3 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--brand-red);
+  margin-bottom: 10px;
+}
+/* ----------------------------------------------------------------------------------
+                final de estilo del contenedor Estadísticas ----------------------
+-------------------------------------------------------------------------------------*/
+/* ----------------------------------------------------------------------------------
+                Inicio de estilo del contenedor de Proceso de Compra ----------------------
+-------------------------------------------------------------------------------------*/
+.proceso-section {
+  background: var(--gris-claro);
+  padding: 80px 0;
+}
+
+/* Tarjetas de pasos */
+.proceso-step {
+  text-align: center;
+  padding: 30px;
+  background: #fff;
+  border: 2px solid transparent; /* 🔹 Sin borde por defecto */
+  border-radius: 20px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+/* Efecto hover: aparece el borde */
+.proceso-step:hover {
+  transform: translateY(-10px);
+  border-color: var(--brand-red); /* 🔹 Aparece el borde rojo */
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Número dentro del círculo */
+.proceso-step .step-number {
+  width: 70px;
+  height: 70px;
+  background: var(--brand-red);
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin: 0 auto 20px;
+}
+
+/* Título y texto */
+.proceso-step h5 {
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.proceso-step p {
+  font-size: 1.1rem;
+  color: #000000;
+}
+
+.proceso-step:hover .step-number {
+  background: #ffe5e5; /* Un rojo claro (puedes ajustarlo) */
+  color: var(--brand-red);
+  border: 2px solid var(--brand-red);
+  transition: all 0.3s ease;
+}
+/* ----------------------------------------------------------------------------------
+                      final del estilo para la barra de navegacion--------------------
+-------------------------------------------------------------------------------------*/
+
 /* ----------------------------------------------------------------------------------
                         Inicio de estilos del contenedor de ventajas --------------------------
   -----------------------------------------------------------------------------------*/
 .hero-scroll {
+  padding: 45px 10px;
   position: relative;
-  height: 50vh; /* ocupa toda la pantalla */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -319,7 +644,6 @@ nav {
 .hero-content p {
   font-size: 1.4rem;
   max-width: 600px;
-  font-weight: 500;
   margin: 0 auto;
   background-color: rgba(255, 255, 255, 0.5);
   border-radius: 25px;
@@ -535,29 +859,49 @@ main section:nth-child(10) {
 @media (max-width: 450px) {
   /* Estilos para la imagen del logo tipo del header */
   header img {
-    width: 200px;
-    margin-left: 70px;
+    margin: auto;
+    width: 13rem;
+    height: fit-content;
+    margin-left: 75px;
   }
   /*Estilos para el contenedor de el icono de WhatSapp y Ubicacion*/
   #cont_info {
     margin-top: 5px;
-    flex-direction: column;
-    align-items: center;
+    display: flex;
+    flex-direction: column; /* uno debajo del otro */
+    align-items: center; /* centrados horizontalmente */
+    gap: 0; /* sin espacio entre ellos */
   }
-  /* Estilos para los iconos informativox de whatsap y Ubicacion*/
-  header span {
-    font-size: 0.95rem;
-    font-weight: 600;
-    align-items: center;
+
+  /* ---------------------------------------------
+      Estilos para tables de la barra de navegacion
+  ----------------------------------------------*/
+  .nav-item::after {
+    display: none;
+  }
+
+  .nav-item:not(:last-child)::after {
+    display: none;
+    content: none; /* también ayuda a eliminarlo completamente */
+  }
+
+  .navbar-collapse {
+    margin-top: 0.1rem;
+    background: #f8f9fa;
+    border-radius: 10px;
+  }
+
+  .boton-whatsapp {
+    width: 100%;
     justify-content: center;
-    text-decoration: none;
-    &:hover {
-      color: var(--rojo);
-    }
+    margin-top: 1rem;
   }
-  /*Estilos para el menu de navegacion en movil*/
-  .nav-item {
-    border: none;
+
+  .contact-info-header {
+    font-size: 1.05rem;
+    font-weight: 700;
+    padding: 0.3rem 0.5rem;
+    letter-spacing: -0.5px;
   }
 
   /* ---------------------------------------------
@@ -568,7 +912,11 @@ main section:nth-child(10) {
   }
 
   #bienvenida {
-    padding: 30px 10px;
+    padding: 50px 10px 0px 10px;
+
+    p {
+      line-height: 1.4;
+    }
   }
 
   /* ---------------------------------------------
@@ -600,25 +948,66 @@ main section:nth-child(10) {
       Estilos para móviles de la seccion ventajas
   ----------------------------------------------*/
   .hero-scroll {
-    background-attachment: scroll; /* fijo no funciona bien en móvil */
+    height: auto;
+    padding: 50px 15px;
+    background-attachment: scroll;
     background-position: center;
   }
 
   .hero-content h1 {
-    font-size: 2rem;
+    font-size: 1.6rem;
     font-weight: 700;
     margin-bottom: 20px;
-    letter-spacing: 0px;
+    letter-spacing: 0;
   }
 
   .hero-content p {
-    font-size: 1.1rem;
-    max-width: 600px;
-    font-weight: 500;
-    margin: 0 auto;
-    background-color: rgba(255, 255, 255, 0.5);
-    border-radius: 25px;
-    margin-bottom: 15px;
+    font-size: 1rem;
+    padding: 6px 10px;
+    border-radius: 15px;
+    margin-bottom: 12px;
+  }
+
+  /* ---------------------------------------------
+      Estilos para móviles de la seccion ventajas
+  ----------------------------------------------*/
+  #quienes-somos {
+    padding: 50px 0;
+  }
+
+  .main-title {
+    font-size: 1.6rem;
+  }
+
+  .card-vm {
+    padding: 30px 20px;
+  }
+
+  .card-icon {
+    width: 100px;
+    height: 100px;
+  }
+
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .divider-line {
+    display: none;
+  }
+
+  .hero-image-wrapper {
+    max-width: 350px;
+  }
+
+  .main-title,
+  .lead-text {
+    text-align: center;
+  }
+
+  .hero-text-container {
+    padding: 0 20px;
   }
 }
 
@@ -627,6 +1016,52 @@ main section:nth-child(10) {
   ------------------------------------------------------------------------------------*/
 
 @media (min-width: 450px) and (max-width: 992px) {
+  /* ---------------------------------------------
+      Estilos para table de la imagen del header
+  ----------------------------------------------*/
+  header img {
+    margin: auto;
+    width: 13rem;
+    height: fit-content;
+    margin-left: 75px;
+  }
+
+  #cont_info {
+    flex-direction: column;
+    gap: 0.5rem !important;
+  }
+
+  /* ---------------------------------------------
+      Estilos para tables de la barra de navegacion
+  ----------------------------------------------*/
+  .nav-item::after {
+    display: none;
+  }
+
+  .nav-item:not(:last-child)::after {
+    display: none;
+    content: none; /* también ayuda a eliminarlo completamente */
+  }
+
+  .navbar-collapse {
+    margin-top: 1rem;
+    padding: 1rem;
+    background: #f8f9fa;
+    border-radius: 10px;
+  }
+
+  .boton-whatsapp {
+    width: 100%;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+
+  .contact-info-header {
+    font-size: 1.05rem;
+    font-weight: 700;
+    padding: 0.3rem 0.5rem;
+    letter-spacing: -0.5px;
+  }
   /* ---------------------------------------------
       Estilos para tablets del carrusel de marcas
   ----------------------------------------------*/
@@ -649,24 +1084,89 @@ main section:nth-child(10) {
       Estilos para móviles de la seccion ventajas
   ----------------------------------------------*/
   .hero-scroll {
-    background-attachment: scroll; /* fijo no funciona bien en móvil */
+    height: auto;
+    padding: 60px 20px;
+    background-attachment: scroll;
     background-position: center;
+  }
+
+  .hero-content {
+    padding: 10px;
   }
 
   .hero-content h1 {
     font-size: 2rem;
-    font-weight: 500;
-    margin-bottom: 20px;
-    letter-spacing: 1px;
+    font-weight: 600;
+    margin-bottom: 25px;
   }
 
   .hero-content p {
-    font-size: 1.4rem;
-    max-width: 600px;
-    font-weight: 500;
-    margin: 0 auto;
-    background-color: rgba(255, 255, 255, 0.5);
-    border-radius: 25px;
-    margin-bottom: 15px;
+    font-size: 1.2rem;
+    padding: 8px 12px;
+    border-radius: 20px;
+  }
+
+  .main-title {
+    font-size: 2rem;
+  }
+
+  .lead-text {
+    font-size: 1rem;
+  }
+
+  .vision-mission-container {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .stat-item {
+    display: block;
+    margin: 20px 0;
+  }
+
+  .stat-number {
+    font-size: 2.5rem;
+  }
+  /* ---------------------------------------------
+      Estilos para móviles de la seccion ventajas
+  ----------------------------------------------*/
+
+  #quienes-somos {
+    padding: 50px 0;
+  }
+
+  .main-title {
+    font-size: 1.6rem;
+  }
+
+  .card-vm {
+    padding: 30px 20px;
+  }
+
+  .card-icon {
+    width: 100px;
+    height: 100px;
+  }
+
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .divider-line {
+    display: none;
+  }
+
+  .hero-image-wrapper {
+    max-width: 350px;
+  }
+
+  .main-title,
+  .lead-text {
+    text-align: center;
+  }
+
+  .hero-text-container {
+    padding: 0 20px;
   }
 }

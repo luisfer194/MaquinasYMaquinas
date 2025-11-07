@@ -7,7 +7,6 @@
   <title>Maquinas & Maquinas</title>
   <link rel="icon" href="images/icono.svg">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
   <link rel="stylesheet" href="css/index.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -36,21 +35,21 @@
           <div class="row w-100 justify-content-center">
 
             <!-- Columna de Información de Contacto (Ocupa col-md-8 en pantallas medianas/grandes) -->
-            <div class="col-12 col-md-8 d-flex justify-content-center align-items-center">
+            <div class="col-12 col-md-8 d-flex justify-content-center align-items-center ">
               <!-- Usamos d-flex flex-column para apilar los elementos verticalmente -->
               <div id="cont_info" class="d-flex justify-content-center">
 
                 <!-- Info WhatsApp -->
-                <a href="https://wa.me/573206524049" class="contact-info-header text-decoration-none">
+                <a href="https://wa.me/573246524049" class="contact-info-header text-decoration-none">
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="green">
                     <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                     <path
                       d="M18.497 4.409a10 10 0 0 1 -10.36 16.828l-.223 -.098l-4.759 .849l-.11 .011a1 1 0 0 1 -.11 0l-.102 -.013l-.108 -.024l-.105 -.037l-.099 -.047l-.093 -.058l-.014 -.011l-.012 -.007l-.086 -.073l-.077 -.08l-.067 -.088l-.056 -.094l-.034 -.07l-.04 -.108l-.028 -.128l-.012 -.102a1 1 0 0 1 0 -.125l.012 -.1l.024 -.11l.045 -.122l1.433 -3.304l-.009 -.014a10 10 0 0 1 1.549 -12.454l.215 -.203a10 10 0 0 1 13.226 -.217m-8.997 3.09a1.5 1.5 0 0 0 -1.5 1.5v1a6 6 0 0 0 6 6h1a1.5 1.5 0 0 0 0 -3h-1l-.144 .007a1.5 1.5 0 0 0 -1.128 .697l-.042 .074l-.022 -.007a4.01 4.01 0 0 1 -2.435 -2.435l-.008 -.023l.075 -.041a1.5 1.5 0 0 0 .704 -1.272v-1a1.5 1.5 0 0 0 -1.5 -1.5" />
                   </svg>
-                  <span>3206524049</span>
+                  <span>3246524049</span>
                 </a>
                 <!-- Ubicación -->
-                <div class="contact-info-header">
+                <div class="contact-info-header d-none d-md-block">
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="red">
                     <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                     <path
@@ -89,36 +88,39 @@
   </header>
 
   <!-- 🔽 El navbar separado para aplicar sticky correctamente -->
-
   <nav class="navbar sticky-top navbar-expand-lg bg-white">
     <div class="container">
       <!-- Logo o nombre (opcional) -->
-      <a class="navbar-brand fw-bold" href="index.html">Maquinas & Maquinas</a>
+      <a class="navbar-brand" href="index.html">Maquinas & Maquinas</a>
 
       <!-- 🔹 Botón del menú alineado a la derecha -->
-      <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
-        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-        aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
       <!-- Menú -->
-      <div class="collapse navbar-collapse justify-content-around" id="navbarSupportedContent">
-        <ul class="navbar-nav justify-content-center">
-          <li class="nav-item"><a class="nav-link" href="#">Inicio </a></li>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item"><a class="nav-link active" href="#">Inicio </a></li>
           <li class="nav-item"><a class="nav-link" href="#">Máquinas </a></li>
           <li class="nav-item"><a class="nav-link" href="#">Repuestos </a></li>
           <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
         </ul>
-        <button id="whatsapp-button" class="btn btn-success text-white ms-lg-3 mt-2 mt-lg-0">
-          <i class="fa fa-whatsapp" aria-hidden="true"></i> Contáctanos ahora
-        </button>
+        <a href="https://wa.me/573246524049" class="boton-whatsapp">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path
+              d="M18.497 4.409a10 10 0 0 1 -10.36 16.828l-.223 -.098l-4.759 .849l-.11 .011a1 1 0 0 1 -.11 0l-.102 -.013l-.108 -.024l-.105 -.037l-.099 -.047l-.093 -.058l-.014 -.011l-.012 -.007l-.086 -.073l-.077 -.08l-.067 -.088l-.056 -.094l-.034 -.07l-.04 -.108l-.028 -.128l-.012 -.102a1 1 0 0 1 0 -.125l.012 -.1l.024 -.11l.045 -.122l1.433 -3.304l-.009 -.014a10 10 0 0 1 1.549 -12.454l.215 -.203a10 10 0 0 1 13.226 -.217m-8.997 3.09a1.5 1.5 0 0 0 -1.5 1.5v1a6 6 0 0 0 6 6h1a1.5 1.5 0 0 0 0 -3h-1l-.144 .007a1.5 1.5 0 0 0 -1.128 .697l-.042 .074l-.022 -.007a4.01 4.01 0 0 1 -2.435 -2.435l-.008 -.023l.075 -.041a1.5 1.5 0 0 0 .704 -1.272v-1a1.5 1.5 0 0 0 -1.5 -1.5" />
+          </svg>
+          Contáctanos ahora
+        </a>
       </div>
     </div>
   </nav>
 
   <main>
-    <!-- Carousel de imagenes de maquinas de coser -->
+    <!-- 1 Carousel de imagenes de maquinas de coser -->
     <section id="carousel-imagenes" class="d-none d-md-block py-lg-3 ">
       <section id="bienvenida" class="text-center d-flex align-items-center ">
         <div class="container">
@@ -146,7 +148,7 @@
         </button>
       </div>
     </section>
-
+    <!-- 2 Carousel de imagenes de maquinas de coser -->
     <section id="bienvenida" class="text-center d-flex align-items-center d-block d-md-none">
       <div class="container">
         <h1 class="fw-bold display-4">¡Bienvenido a <span class="text-danger">Máquinas & Máquinas</span>!</h1>
@@ -158,9 +160,10 @@
       </div>
     </section>
 
-    <!-- Sección de marcas con desplazamiento horizontal -->
+    <!-- 3 Sección de marcas con desplazamiento horizontal -->
     <section class="brands-section">
-      <h2 class="fw-bold mb-3 text-center">Trabajamos con las mejores marcas del mundo de la costura</h2>
+      <h2 class="fw-bold mb-3 text-center">Trabajamos con las mejores marcas
+      </h2>
       <div class="brands-track">
         <div class="brand-item"><img src="images/Logo_singer.png" alt="Marca 1"></div>
         <div class="brand-item"><img src="images/Logo_juki.png" alt="Marca 2"></div>
@@ -182,52 +185,101 @@
       </div>
     </section>
 
-    <!-- 🧰 QUIÉNES SOMOS -->
+    <!-- 4 QUIÉNES SOMOS -->
     <section id="quienes-somos">
-      <div class="container">
-        <div class="row py-2 justify-content-center">
-          <div class="col-12 col-md-8 col-lg-12 d-flex justify-content-center">
-            <img src="images/quienes_somos.png" class="img-fluid rounded" alt="Quienes Somos">
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-12 py-3">
-            <h2 class="text-center fw-bold ">Más de una década impulsando la confección en Colombia</h2>
-            <p class="lead text-justify">Somos una empresa dedicada a la <strong>venta, distribución y
-                mantenimiento</strong> de
-              máquinas
-              de coser domésticas e industriales. Nuestro compromiso es brindarte soluciones confiables, asesoría
-              experta y
-              un servicio técnico de calidad, para que tus proyectos textiles funcionen con la mejor precisión.</p>
-          </div>
-        </div>
+        <div class="container">
+            <!-- Hero Section -->
+            <div class="hero-section">
+                <div class="hero-grid">
+                    <!-- Columna de la imagen -->
+                    <div class="hero-image-container">
+                        <div class="hero-image-wrapper">
+                            <img src="images/quienes_somos.png" class="hero-image" alt="Quienes Somos">
+                        </div>
+                    </div>
 
-        <!-- Visión y Misión -->
-        <div class="row d-flex align-items-center justify-content-between gap-4">
-          <div class="cont-vision-mision col-10 col-md-10 col-lg-5 border border-light mx-auto">
-            <img class="mb-3" src="images/vision.png" alt="">
-            <h2 class="text-center">Visión</h2>
-            <p class="justify-content-center ">Ser la empresa líder en el suministro de maquinaria y servicios para la
-              industria de la confección en
-              Colombia, reconocida por su calidad, innovación y atención al cliente.</p>
+                    <!-- Línea divisoria -->
+                    <div class="divider-line"></div>
+
+                    <!-- Columna del texto -->
+                    <div class="hero-text-container">
+                        <h1 class="main-title">
+                            Más de una década impulsando la confección en Colombia
+                        </h1>
+                        
+                        <p class="lead-text">
+                            Somos una empresa dedicada a la <strong>venta, distribución y mantenimiento</strong> de máquinas de coser domésticas e industriales. Nuestro compromiso es brindarte soluciones confiables, asesoría experta y un servicio técnico de calidad, para que tus proyectos textiles funcionen con la mejor precisión.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Visión y Misión -->
+            <div class="vision-mission-container">
+                <div class="card-vm">
+                    <div class="card-icon">
+                        <img src="images/vision.png" alt="Visión">
+                    </div>
+                    <h2 class="card-title">Visión</h2>
+                    <p class="card-text">
+                        Ser la empresa líder en el suministro de maquinaria y servicios para la industria de la confección en Colombia, reconocida por su calidad, innovación y atención al cliente.
+                    </p>
+                </div>
+
+                <div class="card-vm">
+                    <div class="card-icon">
+                        <img src="images/mision.png" alt="Misión">
+                    </div>
+                    <h2 class="card-title">Misión</h2>
+                    <p class="card-text">
+                        Brindar soluciones integrales en el sector de la confección, a través de un servicio personalizado y productos de alta calidad.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5 Estadísticas  -->
+    <section class="stats-section ">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 col-sm-6 col-10 mb-4 mx-auto">
+            <div class="stat-card">
+              <i class="bi bi-calendar-check"></i>
+              <h3 class="counter" data-target="10" data-prefix="+">0</h3>
+              <p class="lead text-black">Años de experiencia</p>
+            </div>
           </div>
-          <div class="cont-vision-mision col-10 col-md-10 col-lg-5 border border-light mx-auto">
-            <img class="mb-3" src="images/mision.png" alt="">
-            <h2 class="text-center">Misión</h2>
-            <p class="justify-content-center">Brindar soluciones integrales en el sector de la confección, a través de
-              un servicio personalizado y
-              productos de alta calidad.</p>
+          <div class="col-lg-3 col-md-6 col-sm-6 col-10 mb-4 mx-auto">
+            <div class="stat-card">
+              <i class="bi bi-people"></i>
+              <h3 class="counter" data-target="500" data-prefix="+">0</h3>
+              <p>Clientes satisfechos</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6 col-10 mb-4 mx-auto">
+            <div class="stat-card">
+              <i class="bi bi-box-seam"></i>
+              <h3 class="counter" data-target="200" data-prefix="+">0</h3>
+              <p>Productos disponibles</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6 col-10 mb-4 mx-auto">
+            <div class="stat-card">
+              <i class="bi bi-award"></i>
+              <h3 class="counter" data-target="100" data-suffix="%">0</h3>
+              <p>Garantía de calidad</p>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- 🧵 PRODUCTOS DESTACADOS -->
+    <!-- 6 PRODUCTOS DESTACADOS -->
     <section class="py-5" id="catalogo">
       <div class="container text-center">
-        <h2 class="fw-bold mb-5">Nuestras máquinas más vendidas</h2>
+        <h2 class="fw-bold mb-4">Nuestras máquinas más vendidas</h2>
         <div class="row">
-          <div class="col-md-4 mb-3">
+          <div class="col-md-4 col-10 mx-auto mb-3">
             <div class="card h-100 shadow-sm">
               <img src="images/maquinas/Singer_4423.png" class="card-img-top" alt="Singer 4423">
               <div class="card-body">
@@ -237,7 +289,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4 mb-3">
+          <div class="col-md-4 col-10 mx-auto mb-3">
             <div class="card h-100 shadow-sm">
               <img src="images/maquinas/Jack A5E.png" class="card-img-top" alt="Jack A5E">
               <div class="card-body">
@@ -247,7 +299,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4 mb-3">
+          <div class="col-md-4 col-10 mx-auto mb-3">
             <div class="card h-100 shadow-sm">
               <img src="images/maquinas/Kingter KT-D3.png" class="card-img-top" alt="Brother GX37">
               <div class="card-body">
@@ -262,8 +314,8 @@
       </div>
     </section>
 
-    <!-- ⚙️ LÍNEAS DE PRODUCTOS -->
-    <section class="py-5 bg-light" id="productos">
+    <!-- LÍNEAS DE PRODUCTOS -->
+    <!-- <section class="py-5 bg-light" id="productos">
       <div class="container">
         <h2 class="text-center fw-bold mb-5">Todo lo que necesitas para coser sin límites</h2>
         <div class="row text-center">
@@ -305,9 +357,56 @@
           </div>
         </div>
       </div>
+    </section> -->
+
+    <!-- 7 Proceso de Compra -->
+    <section class="proceso-section">
+      <div class="container">
+        <h2 class="text-center fw-bold mb-5">¿Cómo comprar con nosotros?</h2>
+        <div class="row g-4">
+
+          <!-- PASO 1 -->
+          <div class="col-md-4 col-8 mx-auto">
+            <a href="/catalogo" class="text-decoration-none text-dark">
+              <div class="proceso-step">
+                <div class="step-number">1</div>
+                <i class="bi bi-search" style="font-size: 2.5rem; color: var(--brand-red);"></i>
+                <h5 class="mt-3">Busca</h5>
+                <p>Explora nuestro catálogo</p>
+              </div>
+            </a>
+          </div>
+
+          <!-- PASO 2 -->
+          <div class="col-md-4 col-8 mx-auto">
+            <a href="https://wa.me/573206524049?text=Hola%20quisiera%20más%20información%20sobre%20sus%20productos"
+              target="_blank" class="text-decoration-none text-dark">
+              <div class="proceso-step">
+                <div class="step-number">2</div>
+                <i class="bi bi-chat-dots" style="font-size: 2.5rem; color: var(--brand-red);"></i>
+                <h5 class="mt-3">Consulta</h5>
+                <p>Habla con nuestros expertos</p>
+              </div>
+            </a>
+          </div>
+
+          <!-- PASO 3 -->
+          <div class="col-md-4 col-8 mx-auto">
+            <a href="/catalogo" class="text-decoration-none text-dark">
+              <div class="proceso-step">
+                <div class="step-number">3</div>
+                <i class="bi bi-credit-card" style="font-size: 2.5rem; color: var(--brand-red);"></i>
+                <h5 class="mt-3">Compra</h5>
+                <p>Realiza tu pedido</p>
+              </div>
+            </a>
+          </div>
+
+        </div>
+      </div>
     </section>
 
-    <!-- 💪 VENTAJAS -->
+    <!-- 8 VENTAJAS -->
     <section class="hero-scroll">
       <div class="hero-content ">
         <h1>Calidad, confianza y servicio: tres razones para elegirnos</h1>
@@ -319,7 +418,7 @@
       </div>
     </section>
 
-    <!-- 📸 GALERÍA -->
+    <!--  GALERÍA -->
     <!-- <section class="py-5">
       <div class="container text-center">
         <h2 class="fw-bold mb-4">Un vistazo a nuestro trabajo</h2>
@@ -331,7 +430,7 @@
       </div>
     </section> -->
 
-    <!-- 🛍️ CÓMO COMPRAR -->
+    <!-- 8 CÓMO COMPRAR -->
     <section class="py-5 bg-light">
       <div class="container text-center">
         <h2 class="fw-bold mb-4 text-danger">Compra fácil y segura</h2>
@@ -373,6 +472,7 @@
       </div>
     </section> -->
 
+    <!-- 9 Respuestos -->
     <section id="repuestos" class="py-5 ">
       <div class="container">
         <h2 class="mb-4 text-center">Repuestos</h2>
@@ -428,7 +528,7 @@
       </div>
     </section> -->
 
-    <!-- 💌 CTA FINAL -->
+    <!-- 10 CTA FINAL -->
     <section class="py-5 text-center  text-white">
       <div class="container">
         <h2 class="fw-bold">¡Tu próxima gran puntada empieza aquí!</h2>
@@ -438,9 +538,7 @@
       </div>
     </section>
 
-
-
-
+    <!-- 11 Servicios -->
     <section id="servicios" class="py-5">
       <div class="container">
         <h2 class="mb-4 text-center">Servicios</h2>
@@ -467,7 +565,7 @@
       </div>
     </section>
 
-    <!-- 💬 TESTIMONIOS -->
+    <!-- 12 TESTIMONIOS -->
     <section class="py-5 bg-light">
       <div class="container text-center">
         <h2 class="fw-bold mb-4">Lo que nuestros clientes dicen</h2>
@@ -513,6 +611,7 @@
       </div>
     </section>¿
 
+    <!-- 8 Preguntas y respuestas -->
     <section id="faq" class="py-5">
       <div class="container">
         <h2 class="mb-4 text-center">Preguntas frecuentes</h2>
@@ -548,6 +647,7 @@
       </div>
     </section>
 
+    <!-- Script de la respusta de coctacto -->
     <script>
       (function () {
         'use strict'
@@ -699,42 +799,6 @@
         para la industria de la confección</p>
     </div>
   </footer>
-
-  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <script>
-    // Efecto scroll en navbar
-    window.addEventListener('scroll', function() {
-      const navbar = document.querySelector('.navbar-custom');
-      if (window.scrollY > 50) {
-        navbar.classList.add('scrolled');
-      } else {
-        navbar.classList.remove('scrolled');
-      }
-    });
-
-    // Resaltar enlace activo al hacer scroll
-    window.addEventListener('scroll', function() {
-      const sections = document.querySelectorAll('section[id]');
-      const navLinks = document.querySelectorAll('.nav-link');
-      
-      let current = '';
-      
-      sections.forEach(section => {
-        const sectionTop = section.offsetTop;
-        const sectionHeight = section.clientHeight;
-        if (scrollY >= (sectionTop - 200)) {
-          current = section.getAttribute('id');
-        }
-      });
-
-      navLinks.forEach(link => {
-        link.classList.remove('active');
-        if (link.getAttribute('href').slice(1) === current) {
-          link.classList.add('active');
-        }
-      });
-    });
-  </script> -->
 
 </body>
 
