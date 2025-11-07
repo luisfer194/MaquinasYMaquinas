@@ -862,11 +862,10 @@ main section:nth-child(10) {
     margin: auto;
     width: 13rem;
     height: fit-content;
-    margin-left: 75px;
+    margin-left: 40px;
   }
   /*Estilos para el contenedor de el icono de WhatSapp y Ubicacion*/
   #cont_info {
-    margin-top: 5px;
     display: flex;
     flex-direction: column; /* uno debajo del otro */
     align-items: center; /* centrados horizontalmente */
