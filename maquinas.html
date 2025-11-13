@@ -148,7 +148,7 @@
           <h5 class="mb-0"><i class="bi bi-funnel me-2"></i>Filtrar resultados</h5>
         </div>
         <div class="col-md-6 text-end">
-          <button class="btn btn-sm btn-outline-danger" onclick="resetFilters()">
+          <button class="btn btn-sm " onclick="resetFilters()">
             <i class="bi bi-x-circle me-1"></i>Limpiar filtros
           </button>
         </div>
@@ -162,8 +162,12 @@
           </label>
           <select class="form-select filter-select" id="filtroTipo" data-filter-type="tipo">
             <option value="all">Todas las máquinas</option>
-            <option value="domestica">Máquinas Domésticas</option>
-            <option value="industrial">Máquinas Industriales</option>
+            <option value="Plana">Planas</option>
+            <option value="Fileteadora">Fileteadora</option>
+            <option value="Collarin">Collarin</option>
+            <option value="VeinteU">20 U</option>
+            <option value="Poste2agujas">Poste 2 agujas</option>
+            <option value="Familiar">Familiar</option>
           </select>
         </div>
 
@@ -174,11 +178,11 @@
           </label>
           <select class="form-select filter-select" id="filtroMarca" data-filter-type="marca">
             <option value="all">Todas las marcas</option>
-            <option value="singer">Singer</option>
-            <option value="juki">Juki</option>
-            <option value="jack">Jack</option>
-            <option value="kingter">Kingter</option>
-            <option value="brother">Brother</option>
+            <option value="Singer">Singer</option>
+            <option value="Juki">Juki</option>
+            <option value="Jack">Jack</option>
+            <option value="Kingter">Kingter</option>
+            <option value="Brother">Brother</option>
           </select>
         </div>
 
@@ -201,7 +205,7 @@
     </div>
   </section>
 
-  <main class="py-5">
+  <main ">
     <div class="container">
       <div class="results-info">
         <span id="resultsCount">Cargando productos...</span>
@@ -230,7 +234,7 @@
 
   <!-- Modal de detalles -->
   <div class="modal fade" id="productModal" tabindex="-1">
-    <div class="modal-dialog modal-lg">
+    <div class="modal-dialog modal-lg" style="max-width: 100% !important; width: 90% !important;">
       <div class="modal-content">
         <div class="modal-header">
           <h5 class="modal-title" id="modalTitle"></h5>
