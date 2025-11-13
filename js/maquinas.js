@@ -467,7 +467,7 @@ const maquinasDB = [
     },
   },
   {
-    id: 14,
+    id: 13,
     nombre: 'Kingter KT 20U-53D',
     marca: 'Kingter',
     tipo: 'VeinteU',
@@ -511,7 +511,7 @@ const maquinasDB = [
     marca: 'Jontex',
     tipo: 'Poste2agujas',
     categoria: 'Industrial',
-    imagen: 'images/maquinas/Jontex 6820.png',
+    imagen: 'images/maquinas/JONTEX 6820.png',
     precio: 2200000,
     descripcion:
       'Máquina industrial de poste con 2 agujas para puntadas rectas y refuerzo paralelo. Ideal para confección de bolsillos, cinturillas y piezas que requieren costuras resistentes.',
@@ -542,12 +542,12 @@ const maquinasDB = [
     },
   },
   {
-    id: 16,
+    id: 15,
     nombre: 'Jinthex JN-820',
     marca: 'Jinthex',
     tipo: 'Poste2agujas',
     categoria: 'Industrial',
-    imagen: 'images/maquinas/jinthex jn 820.png',
+    imagen: 'images/maquinas/Jinthex jn 820.png',
     precio: 0,
     descripcion:
       'Máquina industrial de poste con 2 agujas, ideal para calzado, bolsos y marroquinería. Permite coser materiales gruesos y piezas curvas o tubulares con alta precisión.',
@@ -575,7 +575,7 @@ const maquinasDB = [
     },
   },
   {
-    id: 17,
+    id: 16,
     nombre: 'Singer 4432 Heavy Duty',
     marca: 'Singer',
     tipo: 'Familiar',
@@ -622,12 +622,12 @@ const maquinasDB = [
     },
   },
   {
-    id: 18,
+    id: 17,
     nombre: 'Singer 4432 Heavy Duty Black Edition',
     marca: 'Singer',
     tipo: 'Familiar',
     categoria: 'Doméstica profesional',
-    imagen: 'images/maquinas/Singer 4432 Black.png',
+    imagen: 'images/maquinas/SINGER 4432 Black.png',
     precio: 1200000,
     descripcion:
       'Máquina de coser mecánica profesional edición Black, con chasís reforzado, 32 puntadas decorativas y utilitarias, diseñada para trabajos exigentes en telas medianas y gruesas. Ideal para confección básica, proyectos de hogar, acolchados y uso intensivo doméstico gracias a su motor reforzado y estructura robusta.',
@@ -670,12 +670,12 @@ const maquinasDB = [
     },
   },
   {
-    id: 19,
+    id: 18,
     nombre: 'Singer Tradition 2250',
     marca: 'Singer',
     tipo: 'Familiar',
     categoria: 'Doméstica / principiantes',
-    imagen: 'images/maquinas/Singer 2250.png',
+    imagen: 'images/maquinas/SINGER 2250.png',
     precio: 1000000,
     descripcion:
       'Máquina de coser mecánica doméstica ideal para principiantes y arreglos del hogar. Incluye 10 puntadas básicas y decorativas, brazo libre, ojal en 4 pasos y velocidad de hasta 750 puntadas por minuto. Es ligera, fácil de usar y adecuada para telas livianas a medianas.',
@@ -715,12 +715,12 @@ const maquinasDB = [
     },
   },
   {
-    id: 20,
+    id: 19,
     nombre: 'Singer 2263',
     marca: 'Singer',
     tipo: 'Familiar',
     categoria: 'Doméstica intermedia',
-    imagen: 'images/maquinas/Singer 2263.png',
+    imagen: 'images/maquinas/SINGER 2263.png',
     precio: 900000,
     descripcion:
       'Máquina de coser mecánica doméstica de nivel intermedio, ideal para proyectos básicos, creativos y arreglos del hogar. Cuenta con 23 puntadas utilitarias y decorativas, enhebrador automático, ojal en 4 pasos y estructura interna metálica que garantiza mayor durabilidad.',
@@ -756,12 +756,12 @@ const maquinasDB = [
     },
   },
   {
-    id: 21,
+    id: 20,
     nombre: 'Singer 1306',
     marca: 'Singer',
     tipo: 'Familiar',
     categoria: 'Doméstica básica',
-    imagen: 'images/maquinas/Singer 1306.png',
+    imagen: 'images/maquinas/SINGER 1306.png',
     precio: 700000,
     descripcion:
       'Máquina de coser mecánica doméstica y portátil, ideal para principiantes y proyectos básicos. Incluye 6 puntadas esenciales entre rectas y zigzag, ojalador en 4 pasos, estructura interna metálica y diseño compacto para un uso sencillo y duradero.',
@@ -796,12 +796,12 @@ const maquinasDB = [
     },
   },
   {
-    id: 22,
+    id: 21,
     nombre: 'Singer M1605',
     marca: 'Singer',
     tipo: 'Familiar',
     categoria: 'Doméstica básica',
-    imagen: 'images/maquinas/Singer M1605.png',
+    imagen: 'images/maquinas/SINGER M1605.png',
     precio: 750000,
     descripcion:
       'Máquina de coser mecánica doméstica de entrada, compacta y fácil de usar, ideal para principiantes y proyectos de reparación o manualidades. Incluye 6 puntadas esenciales, ojalador en 4 pasos, estructura interna de metal y brazo libre para costuras tubulares.',
