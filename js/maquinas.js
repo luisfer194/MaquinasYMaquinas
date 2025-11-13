@@ -46,7 +46,7 @@ const maquinasDB = [
     accesorios: [],
   },
   {
-    id: 5,
+    id: 2,
     nombre: 'Jack A5E',
     marca: 'Jack',
     tipo: 'Plana',
@@ -132,7 +132,7 @@ const maquinasDB = [
     marca: 'Jontex',
     tipo: 'Plana',
     categoria: 'Industrial',
-    imagen: 'images/maquinas/Jontex JT-S310.png',
+    imagen: 'images/maquinas/JONTEX JT-S310.png',
     precio: 1500000,
     descripcion:
       'Máquina plana de costura recta con sistema direct drive incorporado, inspirada en JIN, diseñada para trabajar materiales livianos y medianos.',
@@ -171,7 +171,7 @@ const maquinasDB = [
     marca: 'Siruba',
     tipo: 'Plana',
     categoria: 'Industrial',
-    imagen: 'images/maquinas/Siruba L917-H1.png',
+    imagen: 'images/maquinas/siruba l917-h1.png',
     precio: 0,
     descripcion:
       'Máquina plana de costura recta mecánica gama alta con motor ahorrador externo de 550/600W, orientada a materiales mixtos y pesados.',
@@ -285,7 +285,7 @@ const maquinasDB = [
     marca: 'Jinthex',
     tipo: 'Fileteadora',
     categoria: 'Industrial',
-    imagen: 'images/maquinas/Jinthex JN-798D-5.png',
+    imagen: 'images/maquinas/JINTHEX JN-798D-5.png',
     precio: 1700000,
     descripcion:
       'Fileteadora/overlock industrial mecatrónica de 5 hilos con motor servo directo, ideal para materiales livianos y medianos con alta velocidad de costura.',
@@ -435,7 +435,7 @@ const maquinasDB = [
     marca: 'Jinthex',
     tipo: 'Collarin',
     categoria: 'Industrial',
-    imagen: 'images/maquinas/Jinthex JN-500-02DS.png',
+    imagen: 'images/maquinas/JINTHEX JN-500-02DS.png',
     precio: 0,
     descripcion:
       'Máquina collarín mecatrónica industrial de 3 agujas y 5 hilos con motor direct drive de 550W, ideal para ropa deportiva y prendas de punto. Incluye recubridor superior y luz LED integrada.',
