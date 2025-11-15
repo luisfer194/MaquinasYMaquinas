@@ -266,6 +266,8 @@ header img:hover {
 .search-bar {
   max-width: 700px;
   margin: 0 auto;
+  background-color: transparent !important;
+
 }
 
 .search-input {
@@ -274,6 +276,7 @@ header img:hover {
   border: 2px solid #ddd !important;
   font-size: 1.1rem !important;
   transition: all 0.3s;
+  
 }
 
 .search-input:focus {

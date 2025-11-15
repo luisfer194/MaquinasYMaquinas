@@ -32,3 +32,12 @@ const observer = new IntersectionObserver((entries) => {
   }
 });
 observer.observe(section);
+
+const links = document.querySelectorAll('.nav-link');
+const current = window.location.pathname.split('/').pop();
+
+links.forEach((link) => {
+  if (link.getAttribute('href') === current) {
+    link.classList.add('active');
+  }
+});

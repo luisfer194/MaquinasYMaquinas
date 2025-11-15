@@ -841,6 +841,15 @@ const maquinasDB = [
   },
 ];
 
+const links = document.querySelectorAll('.nav-link');
+const current = window.location.pathname.split('/').pop();
+
+links.forEach((link) => {
+  if (link.getAttribute('href') === current) {
+    link.classList.add('active');
+  }
+});
+
 // Variables globales
 let maquinasFiltradas = [...maquinasDB];
 let filtrosActivos = {
@@ -918,7 +927,7 @@ function renderizarMaquinas(maquinas) {
       }" 
                    onerror="this.src='https://via.placeholder.com/400x250/f8f9fa/666?text=Máquina+de+Coser'">
             </div>
-            <div class="card-body">
+            <div class="card-body d-flex flex-column">
               <span class="product-category">${maquina.categoria}</span>
               <h5 class="card-title fw-bold">${maquina.nombre}</h5>
               <p class="text-muted mb-3">${maquina.descripcion}</p>
@@ -934,15 +943,7 @@ function renderizarMaquinas(maquinas) {
                   .join('')}
               </ul>
 
-              <div class="price-section my-3">
-                <div class="price-label">Precio desde:</div>
-                <div class="price"> 
-                  <span class="price-currency">$</span>${maquina.precio.toLocaleString(
-                    'es-CO'
-                  )}</div>
-              </div>
-
-              <div class="d-grid gap-2">
+              <div class="d-grid gap-2 mt-auto">
                 <a href="https://wa.me/573246524049?text=Hola, me interesa la ${encodeURIComponent(
                   maquina.nombre
                 )}" 
@@ -1066,16 +1067,11 @@ function mostrarDetalles(id) {
   const modalBody = document.getElementById('modalBody');
   modalBody.innerHTML = `
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-md-12 mb-4 mb-md-0">
             <img src="${maquina.imagen}" class="modal-img w-100 mb-3" alt="${
     maquina.nombre
   }"
                  onerror="this.src='https://via.placeholder.com/400x400/f8f9fa/666?text=Máquina+de+Coser'">
-            
-            <div class="price-section mb-3">
-              <div class="price-label">Precio:</div>
-              <div class="price">${maquina.precio.toLocaleString('es-CO')}</div>
-            </div>
 
             <a href="https://wa.me/573246524049?text=Hola, me interesa la ${encodeURIComponent(
               maquina.nombre
@@ -1085,7 +1081,7 @@ function mostrarDetalles(id) {
             </a>
           </div>
 
-          <div class="col-md-6">
+          <div class="col-md-12 mt-3">
             <span class="product-category mb-3">${maquina.categoria}</span>
             <p class="text-muted mt-2">${maquina.descripcion}</p>
 
